@@ -1,0 +1,10 @@
+mixin pack-info(taste, amount, amountDesc, mouse, client)
+  .pack-info
+    .pack-info__title-box
+      span.pack-info__title.pack-info__title--default Сказочное заморское явство
+      span.pack-info__title.pack-info__title--selected Котэ не одобряет?
+    h2.pack-info__name Нямушка #[span.pack-info__taste= taste]
+    ul.pack-info__features
+      li.pack-info__item #[b= amount] #{amountDesc}
+      li.pack-info__item= mouse
+      li.pack-info__item= client

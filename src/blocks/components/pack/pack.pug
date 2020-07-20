@@ -1,0 +1,9 @@
+include ../../components/pack-info/pack-info
+include ../../components/pack-mass/pack-mass
+
+mixin pack(taste, amount, amountDesc, mouse, client, weight)
+  article.pack
+    .pack__content
+      +pack-info(taste, amount, amountDesc, mouse, client)
+    .pack__footer
+      +pack-mass(weight)

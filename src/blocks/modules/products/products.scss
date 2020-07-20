@@ -1,0 +1,12 @@
+.products {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__title {
+    text-align: center;
+    font-family: "Exo2", Arial, Helvetica, sans-serif;;
+    @include font-source (rem(34), 400, $white);
+    text-shadow: 0 1px 0 $black;
+  }
+}

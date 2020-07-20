@@ -1,0 +1,8 @@
+include ../../components/pack-block/pack-block
+
+.products
+  .container
+    .products__title Ты сегодня покормил кота?
+      .products__list
+        each packCard in packCards
+          +pack-block(packCard.taste, packCard.amount, packCard.amountDesc, packCard.mouse, packCard.client, packCard.weight, packCard.selectedText, packCard.endText)

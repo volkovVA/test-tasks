@@ -3,9 +3,16 @@ include helpers/mixins
 
 block variables
 	- const title = "fun-box"
+	-
+		const packCards = [
+			{taste:'c фуа-гра', amount: '10', amountDesc:'порций', mouse:'мышь в подарок', client: '', weight:'0,5', selectedText:'Печень утки разварная с артишоками.', endText:'Печалька, с фуа-гра закончился.'},
+			{taste:'c рыбой', amount:'40', amountDesc:'порций', mouse:'2 мыши в подарок', client: '', weight:'2', selectedText:'Головы щучьи с чесноком да свежайшая сёмгушка.', endText:'Печалька, с рыбой закончился.'},
+			{taste:'c курой', amount:'100', amountDesc:'порций', mouse:'5 мышей в подарок', client: 'заказчик доволен', weight:'5', selectedText:'Филе из цыплят с трюфелями в бульоне.', endText:'Печалька, с курой закончился.'}
+		]
 
 block content
-	h1 Hello World!!!
+	.wrapper.pattern-bg.shadow-bg
+		include ../blocks/modules/products/products
 
 block scripts
 	script(src="js/main.js")
