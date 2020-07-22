@@ -1,8 +1,7 @@
 extends layouts/default
-include helpers/mixins
 
 block variables
-	- const title = "fun-box"
+	- const title = "funbox"
 	-
 		const packCards = [
 			{taste:'c фуа-гра', amount: '10', amountDesc:'порций', mouse:'мышь в подарок', client: '', weight:'0,5', selectedText:'Печень утки разварная с артишоками.', endText:'Печалька, с фуа-гра закончился.'},
@@ -11,9 +10,8 @@ block variables
 		]
 
 block content
-	.wrapper.pattern-bg.shadow-bg
+	.wrapper.pattern-bg
 		include ../blocks/modules/products/products
 
 block scripts
 	script(src="js/main.js")
-	script(src="js/vendor.js")

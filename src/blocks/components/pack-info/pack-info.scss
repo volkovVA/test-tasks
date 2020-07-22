@@ -1,0 +1,26 @@
+.pack-info {
+  color: $black;
+  text-align: left;
+  &__title {
+    @include font-source (rem(16), 400, $dark-grey);
+    &--selected {
+      display: none;
+      color: $pink;
+    }
+  }
+  &__name {
+    @include font-source (rem(48), 700, $black);
+    margin-bottom: rem(10);
+  }
+  &__taste {
+    display: block;
+    @include font-source (rem(24), 700, $black);
+    margin-top: rem(-12);
+  }
+  &__features {
+    @include font-source (rem(14), 400, $dark-grey);
+  }
+  &__item {
+    margin-bottom: rem(-3);
+  }
+}

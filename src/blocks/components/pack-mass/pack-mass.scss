@@ -1,0 +1,15 @@
+.pack-mass {
+  width: rem(81);
+  height: rem(81);
+  border-radius: 50%;
+  background-color: $dark-blue;
+  flex-direction: column;
+  @include flex-center;
+  @include font-source (rem(42), 400, $white, 0.9);
+  &__weight {
+    margin-bottom: 1px;
+  }
+  &__unit {
+    font-size: rem(21);
+  }
+}

@@ -1,0 +1,97 @@
+.pack-block {
+  text-align: center;
+  &--default {
+    .pack {
+      background: linear-gradient(135deg, transparent rem(30), $dark-blue 0) top left;
+      &:hover {
+        background: linear-gradient(135deg, transparent rem(30), $blue 0) top left;
+        transition: ease .2s;
+        & .pack-mass {
+          background-color: $blue;
+          transition: ease .2s;
+        }
+      }
+    }
+  }
+  &--selected {
+    .pack {
+      background: linear-gradient(135deg, transparent rem(30), $red 0) top left;
+      &:hover {
+        background: linear-gradient(135deg, transparent rem(30), $pink 0) top left;
+        transition: ease .2s;
+        .pack-mass {
+          background-color: $pink;
+          transition: ease .2s;
+        }
+        .pack-info__title--default {
+          display: none;
+        }
+        .pack-info__title--selected {
+          display: block;
+        }
+      }
+      &--default {
+        background: linear-gradient(135deg, transparent rem(30), $red 0) top left !important;
+        .pack-mass {
+          background-color: $red !important;
+          transition: ease .2s;
+        }
+        .pack-info__title--default {
+          display: block !important;
+        }
+        .pack-info__title--selected {
+          display: none !important;
+        }
+      }
+    }
+    .pack-mass {
+      background-color: $red;
+    }
+    .pack-block__desc--selected {
+      display: block;
+    }
+    .pack-block__desc--default {
+      display: none;
+    }
+  }
+  &--disabled {
+    .pack {
+      background: linear-gradient(135deg, transparent rem(30), $grey 0) top left;
+      .pack__content {
+        opacity: 0.6;
+      }
+      &:after {
+        opacity: 0.6;
+      }
+    }
+    .pack-mass {
+      background-color: $grey;
+    }
+    .pack-block__desc--selected {
+      display: none;
+    }
+    .pack-block__desc--default {
+      display: none;
+    }
+    .pack-block__desc--disabled {
+      display: block;
+    }
+  }
+  &__desc {
+    display: block;
+    @include font-source (rem(13), 400, $white);
+    margin-top: rem(14);
+    &--selected {
+      display: none;
+    }
+    &--disabled {
+      display: none;
+      color: $yellow;
+    }
+  }
+  &__buy {
+    color: $dark-blue;
+    border-bottom: 1px dashed;
+    cursor: pointer;
+  }
+}

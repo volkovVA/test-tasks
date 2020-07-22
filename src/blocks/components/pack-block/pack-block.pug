@@ -1,8 +1,8 @@
 include ../../components/pack/pack
 
-mixin pack-block(taste, amount, amountDesc, mouse, weight, selectedText, endText)
-  .pack-block
-    +pack(taste, amount, amountDesc, mouse, weight)
-    span.pack-block__desc.pack-block__desc--default Чего сидишь? Порадуй котэ, #[span.pack-block__purchase купи]
+mixin pack-block(taste, amount, amountDesc, mouse, client, weight, selectedText, endText)
+  .pack-block.pack-block--default.js-pack-block
+    +pack(taste, amount, amountDesc, mouse, client, weight)
+    span.pack-block__desc.pack-block__desc--default Чего сидишь? Порадуй котэ, #[span.pack-block__buy.js-buy купи]
     span.pack-block__desc.pack-block__desc--selected= selectedText
-    span.pack-block__desc.pack-block__desc--end= endText
+    span.pack-block__desc.pack-block__desc--disabled= endText

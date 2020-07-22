@@ -1,12 +1,20 @@
 .products {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  min-height: 100vh;
+  @include flex-center;
+  @include media-laptop {
+    height: 100vh;
+  }
   &__title {
     text-align: center;
-    font-family: "Exo2", Arial, Helvetica, sans-serif;;
-    @include font-source (rem(34), 400, $white);
-    text-shadow: 0 1px 0 $black;
+    margin-bottom: rem(20);
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -40px;
+  }
+  &__item {
+    margin: 0 40px 40px;
   }
 }
