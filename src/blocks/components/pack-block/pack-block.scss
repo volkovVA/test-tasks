@@ -2,12 +2,12 @@
   text-align: center;
   &--default {
     .pack {
-      background: linear-gradient(135deg, transparent rem(30), $dark-blue 0) top left;
+      background: linear-gradient(135deg, transparent rem(30), $default-color 0) top left;
       &:hover {
-        background: linear-gradient(135deg, transparent rem(30), $blue 0) top left;
+        background: linear-gradient(135deg, transparent rem(30), $default-hover-color 0) top left;
         transition: ease .2s;
         & .pack-mass {
-          background-color: $blue;
+          background-color: $default-hover-color;
           transition: ease .2s;
         }
       }
@@ -15,12 +15,12 @@
   }
   &--selected {
     .pack {
-      background: linear-gradient(135deg, transparent rem(30), $red 0) top left;
+      background: linear-gradient(135deg, transparent rem(30), $selected-color 0) top left;
       &:hover {
-        background: linear-gradient(135deg, transparent rem(30), $pink 0) top left;
+        background: linear-gradient(135deg, transparent rem(30), $selected-hover-color 0) top left;
         transition: ease .2s;
         .pack-mass {
-          background-color: $pink;
+          background-color: $selected-hover-color;
           transition: ease .2s;
         }
         .pack-info__title--default {
@@ -31,9 +31,9 @@
         }
       }
       &--default {
-        background: linear-gradient(135deg, transparent rem(30), $red 0) top left !important;
+        background: linear-gradient(135deg, transparent rem(30), $selected-color 0) top left !important;
         .pack-mass {
-          background-color: $red !important;
+          background-color: $selected-color !important;
           transition: ease .2s;
         }
         .pack-info__title--default {
@@ -45,7 +45,7 @@
       }
     }
     .pack-mass {
-      background-color: $red;
+      background-color: $selected-color;
     }
     .pack-block__desc--selected {
       display: block;
@@ -56,7 +56,8 @@
   }
   &--disabled {
     .pack {
-      background: linear-gradient(135deg, transparent rem(30), $grey 0) top left;
+      cursor: default;
+      background: linear-gradient(135deg, transparent rem(30), $neutral-regular 0) top left;
       .pack__content {
         opacity: 0.6;
       }
@@ -65,7 +66,7 @@
       }
     }
     .pack-mass {
-      background-color: $grey;
+      background-color: $neutral-regular;
     }
     .pack-block__desc--selected {
       display: none;
@@ -79,19 +80,23 @@
   }
   &__desc {
     display: block;
-    @include font-source (rem(13), 400, $white);
+    @include font-source (rem(13), 400, $main-color);
     margin-top: rem(14);
     &--selected {
       display: none;
     }
     &--disabled {
       display: none;
-      color: $yellow;
+      color: $disabled-color;
     }
   }
   &__buy {
-    color: $dark-blue;
+    color: $default-color;
     border-bottom: 1px dashed;
     cursor: pointer;
+    &:hover {
+      color: $default-hover-color;
+      transition: ease .2s;
+    }
   }
 }

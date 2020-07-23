@@ -19,6 +19,6 @@ _:-ms-fullscreen, :root .container {
 
 .title {
   font-family: "Exo2", Arial, Helvetica, sans-serif;;
-  @include font-source (rem(34), 100, $white);
-  text-shadow: 0 1px 0 $black;
+  @include font-source (rem(34), 100, $main-color);
+  text-shadow: 0 1px 0 $primary-color;
 }

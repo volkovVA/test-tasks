@@ -1,19 +1,28 @@
+// Font
+$mainFont                      : "TrebuchetMS", Arial, Helvetica, sans-serif;
+
+// Size
+$mainFontSize                  : 16px;
+$tabletFontSize                : 15px;
+$mobileFontSize                : 14px;
+$mainLineHeight                : 1.42;
+
 // Mobile first
-$mediaWidthMobile: 320px;
-$mediaWidthTablet: 768px;
-$mediaWidthTabletHorizontal: 1024px;
-$mediaWidthLaptop: 1366px;
+$mediaWidthMobile              : 320px;
+$mediaWidthTablet              : 768px;
+$mediaWidthTabletHorizontal    : 1024px;
+$mediaWidthLaptop              : 1366px;
 
-// Color
+// Main color
+$main-color                    : #ffffff;
+$primary-color                 : #000000;
+$default-color                 : #1698d9;
+$default-hover-color           : #2ea8e6;
+$selected-color                : #d91667;
+$selected-hover-color          : #e62e7a;
+$disabled-color                : #ffff66;
 
-$white: #fff;
-$black: #000;
-$dark-grey: #666;
-$grey: #b3b3b3;
-$light-grey: #f2f2f2;
-$pink: #e62e7a;
-$blue: #2ea8e6;
-$dark-blue: #1698d9;
-$red: #d91667;
-$yellow: #ffff66;
-
+// Neutral color
+$neutral-primary               : #666666;
+$neutral-regular               : #b3b3b3;
+$neutral-light                 : #f2f2f2;

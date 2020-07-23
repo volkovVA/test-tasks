@@ -2,10 +2,10 @@
   width: rem(81);
   height: rem(81);
   border-radius: 50%;
-  background-color: $dark-blue;
+  background-color: $default-color;
   flex-direction: column;
   @include flex-center;
-  @include font-source (rem(42), 400, $white, 0.9);
+  @include font-source (rem(42), 400, $main-color, 0.9);
   &__weight {
     margin-bottom: 1px;
   }

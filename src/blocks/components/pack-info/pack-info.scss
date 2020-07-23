@@ -1,24 +1,24 @@
 .pack-info {
-  color: $black;
+  color: $primary-color;
   text-align: left;
   &__title {
-    @include font-source (rem(16), 400, $dark-grey);
+    @include font-source (rem(16), 400, $neutral-primary);
     &--selected {
+      color: $selected-hover-color;
       display: none;
-      color: $pink;
     }
   }
   &__name {
-    @include font-source (rem(48), 700, $black);
+    @include font-source (rem(48), 700, $primary-color);
     margin-bottom: rem(10);
   }
   &__taste {
     display: block;
-    @include font-source (rem(24), 700, $black);
+    @include font-source (rem(24), 700, $primary-color);
     margin-top: rem(-12);
   }
   &__features {
-    @include font-source (rem(14), 400, $dark-grey);
+    @include font-source (rem(14), 400, $neutral-primary);
   }
   &__item {
     margin-bottom: rem(-3);

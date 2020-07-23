@@ -1,4 +1,4 @@
-/* Font-Source */
+// Font-Source
 
 @mixin font-source($size: false, $weight: false, $color: false, $lh: false) {
   @if $size { font-size: $size; }
@@ -7,7 +7,7 @@
   @if $lh { line-height: $lh; }
 }
 
-/* @2x Images (Pixel Ratio of 1.25+) */
+// @2x Images (Pixel Ratio of 1.25+)
 
 @mixin bg-2x {
   @media only screen and (-o-min-device-pixel-ratio: 5/4),
@@ -19,7 +19,7 @@
   }
 }
 
-/* @3x Images (Pixel Ratio of 2.25+) */
+// @3x Images (Pixel Ratio of 2.25+)
 
 @mixin bg-3x {
   @media only screen and (-o-min-device-pixel-ratio: 9/4),
@@ -31,7 +31,7 @@
   }
 }
 
-/* Flex centering */
+// Flex centering
 
 @mixin flex-center {
   display: flex;
