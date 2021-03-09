@@ -3,7 +3,7 @@ include ../../components/pack-block/pack-block
 section.products
   .container
     h1.title.products__title Ты сегодня покормил кота?
-    .products__list
+    ul.products__list
       each packCard in packCards
-        .products__item
+        li.products__item
           +pack-block(packCard.taste, packCard.amount, packCard.amountDesc, packCard.mouse, packCard.client, packCard.weight, packCard.selectedText, packCard.endText)

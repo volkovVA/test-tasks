@@ -4,7 +4,7 @@
     "author": "Slava Volkov",
     "repository": {
         "type": "git",
-        "url": "https://github.com/volkovVA/GULP-builder.git"
+        "url": "https://github.com/volkovVA/fun-box"
     },
     "license": "MIT",
     "scripts": {
