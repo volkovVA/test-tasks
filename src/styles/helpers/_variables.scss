@@ -1,39 +1,35 @@
 // Font
 
-$mainFont                : Helvetica, Arial, sans-serif;
+$mainFont                : 'Open Sans', Arial, sans-serif;
 
 // Mobile first
 
-$mediaWidthMobile: 320px;
+$mediaWidthMobile: 375px;
 $mediaWidthTablet: 768px;
 $mediaWidthTabletHorizontal: 1024px;
 $mediaWidthLaptop: 1366px;
 
 // Size
 
-$mainFontSize            : 16px;
+$mainFontSize            : 10px;
 $mainFontWeight          : 400;
 $mainLineHeight          : 1.42;
 
 // Main color
 
-$mainfont-color          : #000000;
-$default-color           : #ffffff;
-$primary-color           : #444ce0;
-$success-color           : #26de81;
-$danger-color            : #fc5c65;
-$warning-color           : #fed330;
-$light-color             : #999999;
-$purple-color            : #8854d0;
+$main-color              : #000000;
+$font-color              : #ffffff;
+$tags-color              : #C5DCFF;
+$tags-active-color       : #6BA6FF;
+$btn-color               : #FFD83C;
+$info-one                : #099CE8;
+$info-tow                : #FED74B;
+$info-three              : #7553FF;
+
 
 // Neutral Color
-$neutral-primary         : #303133;
-$neutral-regular         : #606266;
-$neutral-secondary       : #909399;
-$neutral-placeholder     : #C0C4CC;
-
-// Border Color
-$border-base             : #DCDFE6;
-$border-light            : #E4E7ED;
-$border-lighter          : #EBEEF5;
-$border-lightex          : #F2F6FC;
+$neutral-primary         : #292929;
+$neutral-regular         : #343434;
+$neutral-secondary       : #404040;
+$neutral-tertiary        : #4B4B4B;
+$neutral-light           : #9E9E9E;
