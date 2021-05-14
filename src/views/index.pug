@@ -2,10 +2,10 @@ extends layouts/default
 include helpers/mixins
 
 block variables
-	- const title = "gulp-pug-starter"
+	- const title = "Nevatrip — Водные прогулки и экскурсии по Петербургу"
 
 block content
+	include ../blocks/modules/main/main
 
 block scripts
 	script(src="js/main.js")
-	script(src="js/vendor.js")

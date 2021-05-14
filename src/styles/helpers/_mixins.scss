@@ -1,10 +1,10 @@
 // Font-Source
 
-@mixin font-source($size: false, $weight: false, $color: false, $lh: false) {
+@mixin font-source($size: false, $weight: false, $lh: false, $color: false, ) {
   @if $size { font-size: $size; }
   @if $weight { font-weight: $weight; }
-  @if $color { color: $color; }
   @if $lh { line-height: $lh; }
+  @if $color { color: $color; }
 }
 
 // Flex centering

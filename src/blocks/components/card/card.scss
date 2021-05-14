@@ -1,0 +1,140 @@
+.card {
+  display: inline-flex;
+  max-width: 100%;
+  overflow: hidden;
+  border: 1px solid $border;
+  border-radius: 1.5rem;
+}
+
+.card__picture {
+  position: relative;
+  width: 47.3rem;
+  height: 36.9rem;
+  overflow: hidden;
+}
+
+.card__img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card__info {
+  display: block;
+  position: absolute;
+  top: 4.6rem;
+  left: 0;
+  z-index: 2;
+  @include font-source (1.6rem, 600, 2rem, $second-color);
+  text-transform: uppercase;
+  padding: 1.2rem 3.6rem;
+  &--new {
+    background-color: $info-one;
+  }
+  &--yearround {
+    background-color: $btn-color;
+    color: $neutral-first;
+  }
+  &.none {
+    padding: 0;
+  }
+}
+
+.card__description {
+  padding: 1.6rem 4.5rem 0 2.3rem;
+}
+
+.card__title {
+  @include font-source (2.6rem, 400, 3.4rem);
+  width: 52.7rem;
+  margin-bottom: 1.1rem;
+}
+
+.card__time {
+  position: relative;
+  display: flex;
+  align-items: center;
+  @include font-source (1.4rem, 400, 2rem, $neutral-light);
+  margin-bottom: 1.3rem;
+  &:before {
+    content: '';
+    display: block;
+    background-image: url('../../../img/svg/clock.svg');
+    background-repeat: no-repeat;
+    width: 1.6rem;
+    height: 1.6rem;
+    left: 0;
+    margin-right: 0.5rem;
+  }
+}
+
+.card__lists {
+  position: relative;
+  margin-bottom: 2.6rem;
+}
+
+.card__desc-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  @include font-source (1.8rem, 400, 2rem, $neutral-regular);
+  margin-bottom: 1.5rem;
+  &:before {
+    content: '';
+    display: block;
+    background-image: url('../../../img/svg/bird.svg');
+    background-repeat: no-repeat;
+    width: 1.6rem;
+    height: 1.2rem;
+    left: 0;
+    margin-right: 1.3rem;
+  }
+}
+
+.card__tags-list {
+  display: flex;
+  padding-left: 0.76rem;
+  padding-top: 0.5rem;
+}
+
+.card__tags-item {
+  @include font-source (1.6rem, 400, 2rem, $neutral-regular);
+  background-color: $tags-color;
+  border-radius: 1.1rem;
+  padding: 0.4rem 1.5rem;
+  margin-right: 1rem;
+  &:last-child {
+    margin-right: 0;
+  }
+  &.active {
+    color: $second-color;
+    background-color: $tag-active-color;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.card__footer {
+  display: flex;
+}
+
+.card__price {
+  margin-right: 1.6rem;
+  padding-top: 0.4rem;
+}
+
+.card__rate {
+  @include font-source (3.6rem, 400, 2rem);
+  margin-bottom: 0.9rem;
+}
+
+.card__rateberth {
+  @include font-source (1.4rem, 400, 2rem);
+}
+
+.card__link {
+  @include font-source (1.8rem, 400, 2rem);
+  background-color: $btn-color;
+  border-radius: 2.3rem;
+  padding: 1.6rem 4.2rem;
+}
+

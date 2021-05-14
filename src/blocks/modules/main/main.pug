@@ -1,0 +1,15 @@
+include ../../components/card/card
+
+//- -
+//-   const cardContent = [
+//-     {src:'./img/bridge.png', alt:'мост', title:'Обзорная экскурсия по рекам и каналам с остановками Hop on Hop Off 2020', time:'2 часа', desc: ['Билет на целый день','Неограниченное число катаний','6 остановок у главных достопримечательностей','Ближайший рейс сегодня'], tags:'12:00', price:'900 &#8381;', priceBerth:'1200 &#8381;', info:'Новинка'},
+//-     {src:'./img/church.png', alt:'мост', title:'Обзорная экскурсия по рекам и каналам с остановками Hop on Hop Off 2020', time:'2 часа', desc: ['Билет на целый день','Неограниченное число катаний','6 остановок у главных достопримечательностей','Ближайший рейс сегодня'], tags:'12:00', price:'900 &#8381;', priceBerth:'1200 &#8381;', info:'Новинка'},
+//-     {src:'./img/piano.png', alt:'мост', title:'Обзорная экскурсия по рекам и каналам с остановками Hop on Hop Off 2020', time:'2 часа', desc: ['Билет на целый день','Неограниченное число катаний','6 остановок у главных достопримечательностей','Ближайший рейс сегодня'], tags:'12:00', price:'900 &#8381;', priceBerth:'1200 &#8381;', info:'Новинка'}
+//-   ]
+
+main.main
+  .container
+    ul.main__list
+      each card, index in cardContent
+        li.main__item
+          +card(card.src, card.alt, card.title, card.time, card.desc, card.tags, card.price, card.priceBerth, card.info, index)

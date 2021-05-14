@@ -1,0 +1,10 @@
+.main {
+  padding: 6.7rem 0;
+}
+
+.main__item {
+  margin-bottom: 5.7rem;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

@@ -18,9 +18,10 @@ $mainLineHeight          : 1.42;
 // Main color
 
 $main-color              : #000000;
-$font-color              : #ffffff;
+$mainfont-color          : #ffffff;
+$second-color            : #ffffff;
 $tags-color              : #C5DCFF;
-$tags-active-color       : #6BA6FF;
+$tag-active-color        : #6BA6FF;
 $btn-color               : #FFD83C;
 $info-one                : #099CE8;
 $info-tow                : #FED74B;
@@ -30,6 +31,11 @@ $info-three              : #7553FF;
 // Neutral Color
 $neutral-primary         : #292929;
 $neutral-regular         : #343434;
+$neutral-first           : #323232;
 $neutral-secondary       : #404040;
 $neutral-tertiary        : #4B4B4B;
 $neutral-light           : #9E9E9E;
+
+// Border Color
+
+$border                  : #8E8E8E;
