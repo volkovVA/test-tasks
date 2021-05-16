@@ -1,15 +1,15 @@
 -
   const cardContent = [
-    {src:'./img/bridge.png', alt:'мост', title:'Обзорная экскурсия по рекам и каналам с остановками Hop on Hop Off 2020', time:'2 часа', desc: ['Билет на целый день','Неограниченное число катаний','6 остановок у главных достопримечательностей','Ближайший рейс сегодня'], tags: ['12:00','12:00','12:00'], price:'900 ₽', priceBerth:'1200 ₽ на причале', info:'новинка'},
-    {src:'./img/church.png', alt:'мост', title:'Обзорная экскурсия по рекам и каналам с остановками Hop on Hop Off 2020', time:'2 часа', desc: ['Билет на целый день','Неограниченное число катаний','6 остановок у главных достопримечательностей','Ближайший рейс сегодня'], tags:['12:00','12:00','12:00', '12:00'], price:'900 ₽', priceBerth:'1200 ₽ на причале', info:'круглый год'},
-    {src:'./img/piano.png', alt:'мост', title:'Обзорная экскурсия по рекам и каналам с остановками Hop on Hop Off 2020', time:'2 часа', desc: ['Билет на целый день','Неограниченное число катаний','6 остановок у главных достопримечательностей','Ближайший рейс сегодня'], tags:['12:00','12:00','12:00','12:00','12:00','12:00'], price:'900 ₽', priceBerth:'1200 ₽ на причале', info: 'новинка'},
+    {src:'./img/bridge/bridge.png', srcset:'./img/bridge/bridge@2x.png 1.25x, ./img/bridge/bridge@3x.png 2.25x', alt:'мост', title:'Обзорная экскурсия по рекам и каналам с остановками Hop on Hop Off 2020', time:'2 часа', desc: ['Билет на целый день','Неограниченное число катаний','6 остановок у главных достопримечательностей','Ближайший рейс сегодня'], tags: ['12:00','12:00','12:00'], price:'900 ₽', priceBerth:'1200 ₽ на причале', info:'новинка'},
+    {src:'./img/church/church.png', srcset:'./img/church/church@2x.png 1.25x, ./img/church/church@3x.png 2.25x', alt:'мост', title:'Обзорная экскурсия по рекам и каналам с остановками Hop on Hop Off 2020', time:'2 часа', desc: ['Билет на целый день','Неограниченное число катаний','6 остановок у главных достопримечательностей','Ближайший рейс сегодня'], tags:['12:00','12:00','12:00', '12:00'], price:'900 ₽', priceBerth:'1200 ₽ на причале', info:'круглый год'},
+    {src:'./img/piano/piano.png', srcset:'./img/piano/piano@2x.png 1.25x, ./img/piano/piano@3x.png 2.25x', alt:'мост', title:'Обзорная экскурсия по рекам и каналам с остановками Hop on Hop Off 2020', time:'2 часа', desc: ['Билет на целый день','Неограниченное число катаний','6 остановок у главных достопримечательностей','Ближайший рейс сегодня'], tags:['12:00','12:00','12:00','12:00','12:00','12:00'], price:'900 ₽', priceBerth:'1200 ₽ на причале', info: 'новинка'},
   ]
 
-mixin card(src, alt, title, time, desc, tags, price, priceBerth, info, index)
+mixin card(src, srcset, alt, title, time, desc, tags, price, priceBerth, info, index)
   article.card
     .card__picture
-      img.card__img.card__img--mobile(src="./img/kazan-cathedral.png", alt="казанский кафедральный собор")
-      img.card__img(src= src, alt= alt)
+      img.card__img.card__img--mobile(src="./img/kazan-cathedral/kazan-cathedral.png", srcset='./img/kazan-cathedral/kazan-cathedral@2x.png 1.25x, ./img/kazan-cathedral/kazan-cathedral@3x.png 2.25x', alt="казанский кафедральный собор")
+      img.card__img(src= src, srcset= srcset, alt= alt)
     if index == 0
       .card__info.card__info--new= info
     else if index == 1
