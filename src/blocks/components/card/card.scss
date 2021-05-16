@@ -1,140 +1,305 @@
 .card {
-  display: inline-flex;
-  max-width: 100%;
-  overflow: hidden;
-  border: 1px solid $border;
-  border-radius: 1.5rem;
+    @include media-tablet {
+        display: inline-flex;
+    }
+    display: block;
+    position: relative;
+    max-width: 100%;
+    border: 1px solid $border;
+    border-radius: 1.5rem;
 }
 
 .card__picture {
-  position: relative;
-  width: 47.3rem;
-  height: 36.9rem;
-  overflow: hidden;
+    @include media-tablet {
+        width: 47.3rem;
+        height: 36.9rem;
+        border-radius: 1.5rem 0 0 1.5rem;
+    }
+    position: relative;
+    width: 100%;
+    height: 22rem;
+    border-radius: 1.5rem 1.5rem 0 0;
+    overflow: hidden;
 }
 
 .card__img {
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+    @include media-tablet {
+        display: block;
+    }
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    &--mobile {
+        @include media-tablet {
+            display: none;
+        }
+        display: block;
+    }
 }
 
 .card__info {
-  display: block;
-  position: absolute;
-  top: 4.6rem;
-  left: 0;
-  z-index: 2;
-  @include font-source (1.6rem, 600, 2rem, $second-color);
-  text-transform: uppercase;
-  padding: 1.2rem 3.6rem;
-  &--new {
-    background-color: $info-one;
-  }
-  &--yearround {
-    background-color: $btn-color;
-    color: $neutral-first;
-  }
-  &.none {
-    padding: 0;
-  }
+    @include font-source (1.2rem, 600, 2rem, $second-color);
+    @include media-tablet {
+        top: 4.6rem;
+        font-size: 1.6rem;
+    }
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 4.1rem;
+    left: -1px;
+    padding: 1.2rem 3.6rem;
+    text-transform: uppercase;
+    color: $neutral-fourth;
+    &--new {
+        background-color: $info-one;
+        color: $second-color;
+    }
+    &--yearround {
+        @include media-tablet {
+            opacity: 1;
+        }
+        background-color: $btn-color;
+        color: $neutral-first;
+        opacity: 0;
+    }
+    &--newpurple {
+        @include media-tablet {
+            display: none;
+        }
+        display: block;
+        top: -1px;
+        background-color: $info-three;
+        border-radius: 15px 0 12px;
+        color: $second-color;
+    }
+    &--newmobile {
+        @include media-tablet {
+            display: none;
+        }
+        display: block;
+        padding: 0.7rem 2rem;
+        background-color: $btn-color;
+        color: $neutral-first;
+    }
 }
 
 .card__description {
-  padding: 1.6rem 4.5rem 0 2.3rem;
+    @include media-tablet {
+        display: block;
+        padding: 1.6rem 0 1rem 2rem;
+    }
+    display: flex;
+    flex-direction: column;
+    padding: 1.4rem 1.2rem 1.9rem 1.2rem;
 }
 
 .card__title {
-  @include font-source (2.6rem, 400, 3.4rem);
-  width: 52.7rem;
-  margin-bottom: 1.1rem;
+    @include font-source (1.4rem, 600, 2.2rem);
+    @include media-tablet {
+        @include font-source (2.6rem, 400, 3.4rem);
+        width: 52.7rem;
+        margin-bottom: 1.1rem;
+    }
+    order: 1;
+    width: 100%;
+    text-align: left;
+    color: $neutral-secondary;
+    margin-bottom: 1.8rem;
+}
+
+.card__action {
+    @include font-source (1.4rem, 600, 2.2rem);
+    @include media-tablet {
+        display: none;
+    }
+    display: inline;
+    text-transform: uppercase;
 }
 
 .card__time {
-  position: relative;
-  display: flex;
-  align-items: center;
-  @include font-source (1.4rem, 400, 2rem, $neutral-light);
-  margin-bottom: 1.3rem;
-  &:before {
-    content: '';
-    display: block;
-    background-image: url('../../../img/svg/clock.svg');
-    background-repeat: no-repeat;
-    width: 1.6rem;
-    height: 1.6rem;
-    left: 0;
-    margin-right: 0.5rem;
-  }
+    @include font-source (1.2rem, 400 , 2rem, $neutral-light);
+    @include media-tablet {
+        font-size: 1.4rem;
+        margin-bottom: 1.3rem;
+    }
+    display: flex;
+    align-items: center;
+    order: 0;
+    position: relative;
+    margin-bottom: 1.1rem;
+    &:before {
+        content: "";
+        display: block;
+        left: 0;
+        width: 1.6rem;
+        height: 1.6rem;
+        background-image: url("../../../img/svg/clock.svg");
+        background-repeat: no-repeat;
+        margin-right: 0.5rem;
+    }
 }
 
 .card__lists {
-  position: relative;
-  margin-bottom: 2.6rem;
+    @include media-tablet {
+        margin-bottom: 2.6rem;
+    }
+    order: 2;
+    position: relative;
+    margin-bottom: 2.2rem;
 }
 
 .card__desc-item {
-  position: relative;
-  display: flex;
-  align-items: center;
-  @include font-source (1.8rem, 400, 2rem, $neutral-regular);
-  margin-bottom: 1.5rem;
-  &:before {
-    content: '';
-    display: block;
-    background-image: url('../../../img/svg/bird.svg');
-    background-repeat: no-repeat;
-    width: 1.6rem;
-    height: 1.2rem;
-    left: 0;
-    margin-right: 1.3rem;
-  }
+    @include font-source (1.4rem, 400, 2rem, $neutral-regular);
+    @include media-tablet {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+    position: relative;
+    margin-bottom: 1.3rem;
+    padding-left: 3.6rem;
+    color: $neutral-tertiary;
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1.6rem;
+        height: 1.2rem;
+        transform: translateY(50%);
+        background-image: url("../../../img/svg/bird.svg");
+        background-repeat: no-repeat;
+    }
+    &:last-child {
+        @include media-tablet {
+            display: flex;
+            align-items: flex-start;
+        }
+        display: block;
+        align-items: center;
+        white-space: nowrap;
+        &::before {
+            @include media-tablet {
+                transform: translateY(50%);
+            }
+            transform: translateY(100%);
+        }
+    }
 }
 
 .card__tags-list {
-  display: flex;
-  padding-left: 0.76rem;
-  padding-top: 0.5rem;
+    @include media-tablet {
+        width: 35rem;
+        height: 3.5rem;
+        padding-left: 0.76rem;
+        padding-top: 0.5rem;
+        margin-top: 0;
+    }
+    display: flex;
+    flex-wrap: wrap;
+    height: 2.5rem;
+    padding-left: 0.5rem;
+    padding-top: 0;
+    margin-top: 1.6rem;
+    overflow: hidden;
+    &.active {
+        height: 100%;
+        overflow: visible;
+    }
 }
 
 .card__tags-item {
-  @include font-source (1.6rem, 400, 2rem, $neutral-regular);
-  background-color: $tags-color;
-  border-radius: 1.1rem;
-  padding: 0.4rem 1.5rem;
-  margin-right: 1rem;
-  &:last-child {
-    margin-right: 0;
-  }
-  &.active {
-    color: $second-color;
-    background-color: $tag-active-color;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-  }
+    @include font-source (1.4rem, 400, 2rem, $neutral-regular);
+    @include media-tablet {
+        font-size: 1.6rem;
+        padding: 0.4rem 1.5rem;
+        margin-right: 1rem;
+    }
+    @include media-custom(321px) {
+        margin-right: 1.5rem;
+    }
+    background-color: $tags-color;
+    border-radius: 1.1rem;
+    padding: 0.1rem 0.8rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    &:last-child, &:nth-child(4) {
+        margin-right: 0;
+    }
+    &.active {
+        color: $second-color;
+        background-color: $tag-active-color;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    }
+    &.button {
+        cursor: pointer;
+    }
 }
 
 .card__footer {
-  display: flex;
+    @include media-tablet {
+        justify-content: flex-start;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    order: 3;
 }
 
 .card__price {
-  margin-right: 1.6rem;
-  padding-top: 0.4rem;
+    @include media-tablet {
+        margin-right: 1.6rem;
+        padding-top: 0.4rem;
+        padding-left: 0;
+    }
+    margin-right: 0;
+    padding-top: 0;
+    padding-left: 0.8rem;
 }
 
 .card__rate {
-  @include font-source (3.6rem, 400, 2rem);
-  margin-bottom: 0.9rem;
+    @include font-source (3rem, 400, 2rem);
+    @include media-tablet {
+        font-size: 3.6rem;
+        margin-bottom: 0.9rem;
+    }
+    margin-bottom: 0.2rem;
+    &--mobile {
+        @include media-tablet {
+            display: none;
+        }
+        display: block;
+        & + .card__rate {
+            @include media-tablet {
+                display: block;
+            }
+            display: none;
+        }
+    }
 }
 
 .card__rateberth {
-  @include font-source (1.4rem, 400, 2rem);
+    @include font-source (1rem, 400, 2rem);
+    @include media-tablet {
+        font-size: 1.4rem;
+    }
 }
 
 .card__link {
-  @include font-source (1.8rem, 400, 2rem);
-  background-color: $btn-color;
-  border-radius: 2.3rem;
-  padding: 1.6rem 4.2rem;
+    @include font-source (1.4rem, 400, 2rem);
+    @include media-tablet {
+        font-size: 1.8rem;
+        padding: 1.6rem 4.2rem;
+    }
+    @include media-custom(321px) {
+        margin-right: 1rem;
+    }
+    background-color: $btn-color;
+    border-radius: 2.3rem;
+    padding: 1.2rem 4.4rem;
+    margin-right: 0;
 }
 

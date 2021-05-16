@@ -2,21 +2,23 @@
   const cardContent = [
     {src:'./img/bridge.png', alt:'мост', title:'Обзорная экскурсия по рекам и каналам с остановками Hop on Hop Off 2020', time:'2 часа', desc: ['Билет на целый день','Неограниченное число катаний','6 остановок у главных достопримечательностей','Ближайший рейс сегодня'], tags: ['12:00','12:00','12:00'], price:'900 ₽', priceBerth:'1200 ₽ на причале', info:'новинка'},
     {src:'./img/church.png', alt:'мост', title:'Обзорная экскурсия по рекам и каналам с остановками Hop on Hop Off 2020', time:'2 часа', desc: ['Билет на целый день','Неограниченное число катаний','6 остановок у главных достопримечательностей','Ближайший рейс сегодня'], tags:['12:00','12:00','12:00', '12:00'], price:'900 ₽', priceBerth:'1200 ₽ на причале', info:'круглый год'},
-    {src:'./img/piano.png', alt:'мост', title:'Обзорная экскурсия по рекам и каналам с остановками Hop on Hop Off 2020', time:'2 часа', desc: ['Билет на целый день','Неограниченное число катаний','6 остановок у главных достопримечательностей','Ближайший рейс сегодня'], tags:['12:00','12:00','12:00', 'ещё...'], price:'900 ₽', priceBerth:'1200 ₽ на причале', info: ''},
+    {src:'./img/piano.png', alt:'мост', title:'Обзорная экскурсия по рекам и каналам с остановками Hop on Hop Off 2020', time:'2 часа', desc: ['Билет на целый день','Неограниченное число катаний','6 остановок у главных достопримечательностей','Ближайший рейс сегодня'], tags:['12:00','12:00','12:00','12:00','12:00','12:00'], price:'900 ₽', priceBerth:'1200 ₽ на причале', info: 'новинка'},
   ]
 
 mixin card(src, alt, title, time, desc, tags, price, priceBerth, info, index)
   article.card
     .card__picture
+      img.card__img.card__img--mobile(src="./img/kazan-cathedral.png", alt="казанский кафедральный собор")
       img.card__img(src= src, alt= alt)
-      if index == 0
-        span.card__info.card__info--new= info
-      else if index == 1
-        span.card__info.card__info--yearround= info
-      else
-        span.card__info.none
+    if index == 0
+      .card__info.card__info--new= info
+    else if index == 1
+      .card__info.card__info--yearround= info
+      .card__info.card__info--newmobile новинка
+    else
+      .card__info.card__info--newpurple= info
     .card__description
-      h2.card__title= title
+      h2.card__title #[span.card__action акция -] #{title}
       span.card__time= time
       .card__lists
         ul.card__desc-list
@@ -33,6 +35,8 @@ mixin card(src, alt, title, time, desc, tags, price, priceBerth, info, index)
               li.card__desc-item= item
       .card__footer
         .card__price
+          if index == 2
+            .card__rate.card__rate--mobile 2900 ₽
           .card__rate= price
           .card__rateberth= priceBerth
         a.card__link(href="#") Подробнее
