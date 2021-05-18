@@ -1,10 +1,11 @@
 // Font
 
-$mainFont                : Helvetica, Arial, sans-serif;
+$mainFont                : 'Lato', Arial, sans-serif;
 
 // Mobile first
 
-$mediaWidthMobile: 320px;
+$mediaWidthMobileMin: 320px;
+$mediaWidthMobile: 375px;
 $mediaWidthTablet: 768px;
 $mediaWidthTabletHorizontal: 1024px;
 $mediaWidthLaptop: 1366px;
@@ -18,22 +19,12 @@ $mainLineHeight          : 1.42;
 // Main color
 
 $mainfont-color          : #ffffff;
-$default-color           : #ffffff;
-$primary-color           : #444ce0;
-$success-color           : #26de81;
-$danger-color            : #fc5c65;
-$warning-color           : #fed330;
-$light-color             : #999999;
-$purple-color            : #8854d0;
+$secondfont-color        : #EBEBEB;
+$main-color              : #ffffff;
+$default-color           : #000000;
+$primary-color           : #005FA3;
 
 // Neutral Color
-$neutral-primary         : #303133;
-$neutral-regular         : #606266;
-$neutral-secondary       : #909399;
-$neutral-placeholder     : #C0C4CC;
-
-// Border Color
-$border-base             : #DCDFE6;
-$border-light            : #E4E7ED;
-$border-lighter          : #EBEEF5;
-$border-lightex          : #F2F6FC;
+$neutral-primary         : #222222;
+$neutral-secondary       : #333333;
+$neutral-light           : #BDBDBD;
