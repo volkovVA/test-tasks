@@ -1,25 +1,23 @@
 .card {
     @include media-tablet {
-        display: inline-flex;
+        display: flex;
     }
     display: block;
     position: relative;
     max-width: 100%;
+    overflow: hidden;
     border: 1px solid $border;
     border-radius: 1.5rem;
 }
 
 .card__picture {
     @include media-tablet {
-        width: 47.3rem;
-        height: 36.9rem;
+        flex-basis: 43%;
+        min-width: 30rem;
         border-radius: 1.5rem 0 0 1.5rem;
     }
     position: relative;
-    width: 100%;
-    height: 22rem;
     border-radius: 1.5rem 1.5rem 0 0;
-    overflow: hidden;
 }
 
 .card__img {
@@ -40,7 +38,7 @@
 }
 
 .card__info {
-    @include font-source (1.2rem, 600, 2rem, $second-color);
+    @include font-source(1.2rem, 600, 2rem, $second-color);
     @include media-tablet {
         top: 4.6rem;
         font-size: 1.6rem;
@@ -89,29 +87,29 @@
 .card__description {
     @include media-tablet {
         display: block;
-        padding: 1.6rem 0 1rem 2rem;
+        padding: 1.6rem 2rem 1rem;
     }
     display: flex;
+    flex-basis: 57%;
     flex-direction: column;
     padding: 1.4rem 1.2rem 1.9rem 1.2rem;
 }
 
 .card__title {
-    @include font-source (1.4rem, 600, 2.2rem);
+    @include font-source(1.4rem, 600, 2.2rem);
     @include media-tablet {
-        @include font-source (2.6rem, 400, 3.4rem);
-        width: 52.7rem;
-        margin-bottom: 1.1rem;
+        @include font-source(2.6rem, 400, 3.4rem);
+        margin-bottom: 1.2rem;
     }
     order: 1;
-    width: 100%;
+    max-width: 52rem;
     text-align: left;
     color: $neutral-secondary;
     margin-bottom: 1.8rem;
 }
 
 .card__action {
-    @include font-source (1.4rem, 600, 2.2rem);
+    @include font-source(1.4rem, 600, 2.2rem);
     @include media-tablet {
         display: none;
     }
@@ -120,7 +118,7 @@
 }
 
 .card__time {
-    @include font-source (1.2rem, 400 , 2rem, $neutral-light);
+    @include font-source(1.2rem, 400, 2rem, $neutral-light);
     @include media-tablet {
         font-size: 1.4rem;
         margin-bottom: 1.3rem;
@@ -136,7 +134,7 @@
         left: 0;
         width: 1.6rem;
         height: 1.6rem;
-        background-image: url("../../../img/svg/clock.svg");
+        background-image: url("./../img/svg/clock.svg");
         background-repeat: no-repeat;
         margin-right: 0.5rem;
     }
@@ -144,18 +142,19 @@
 
 .card__lists {
     @include media-tablet {
-        margin-bottom: 2.6rem;
+        margin-bottom: 0;
     }
     order: 2;
     position: relative;
-    margin-bottom: 2.2rem;
+    margin-bottom: 1.2rem;
 }
 
 .card__desc-item {
-    @include font-source (1.4rem, 400, 2rem, $neutral-regular);
+    @include font-source(1.4rem, 400, 2rem, $neutral-regular);
     @include media-tablet {
         font-size: 1.8rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1.7rem;
+        padding-left: 3rem;
     }
     position: relative;
     margin-bottom: 1.3rem;
@@ -170,13 +169,14 @@
         width: 1.6rem;
         height: 1.2rem;
         transform: translateY(50%);
-        background-image: url("../../../img/svg/bird.svg");
+        background-image: url("./../img/svg/bird.svg");
         background-repeat: no-repeat;
     }
     &:last-child {
         @include media-tablet {
             display: flex;
             align-items: flex-start;
+            margin-bottom: 1.2rem;
         }
         display: block;
         align-items: center;
@@ -192,54 +192,52 @@
 
 .card__tags-list {
     @include media-tablet {
-        width: 35rem;
-        height: 3.5rem;
         padding-left: 0.76rem;
-        padding-top: 0.5rem;
         margin-top: 0;
     }
     display: flex;
     flex-wrap: wrap;
-    height: 2.5rem;
     padding-left: 0.5rem;
-    padding-top: 0;
     margin-top: 1.6rem;
     overflow: hidden;
-    &.active {
-        height: 100%;
-        overflow: visible;
-    }
 }
 
 .card__tags-item {
-    @include font-source (1.4rem, 400, 2rem, $neutral-regular);
-    @include media-tablet {
-        font-size: 1.6rem;
-        padding: 0.4rem 1.5rem;
-        margin-right: 1rem;
-    }
     @include media-custom(321px) {
-        margin-right: 1.5rem;
+        margin-right: 0.7rem;
     }
-    background-color: $tags-color;
-    border-radius: 1.1rem;
-    padding: 0.1rem 0.8rem;
     margin-right: 0.5rem;
-    margin-bottom: 0.5rem;
-    &:last-child, &:nth-child(4) {
+    margin-bottom: 0.7rem;
+    &:last-child {
         margin-right: 0;
     }
-    &.active {
+}
+
+.card__tags-link {
+    @include font-source(1.4rem, 400, 2.4rem, $neutral-regular);
+    @include media-tablet {
+        font-size: 1.6rem;
+        width: 7rem;
+        height: 2.7rem;
+        line-height: 2.7rem;
+    }
+    display: inline-block;
+    background-color: $tags-color;
+    border-radius: 1.1rem;
+    width: 6rem;
+    height: 2.4rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    transition: color 0.3s, background-color 0.3s, box-shadow 0.3s;
+    &:hover {
         color: $second-color;
         background-color: $tag-active-color;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
     }
-    &.button {
-        cursor: pointer;
-    }
 }
 
-.card__footer {
+.card__price-box {
     @include media-tablet {
         justify-content: flex-start;
     }
@@ -252,21 +250,19 @@
 .card__price {
     @include media-tablet {
         margin-right: 1.6rem;
-        padding-top: 0.4rem;
         padding-left: 0;
     }
     margin-right: 0;
-    padding-top: 0;
     padding-left: 0.8rem;
 }
 
 .card__rate {
-    @include font-source (3rem, 400, 2rem);
+    @include font-source(3rem, 400, 2rem);
     @include media-tablet {
         font-size: 3.6rem;
-        margin-bottom: 0.9rem;
+        line-height: 3.6rem;
     }
-    margin-bottom: 0.2rem;
+    display: block;
     &--mobile {
         @include media-tablet {
             display: none;
@@ -282,14 +278,16 @@
 }
 
 .card__rateberth {
-    @include font-source (1rem, 400, 2rem);
+    @include font-source(1rem, 400, 2rem);
     @include media-tablet {
         font-size: 1.4rem;
+        line-height: 1.4rem;
     }
+    display: block;
 }
 
-.card__link {
-    @include font-source (1.4rem, 400, 2rem);
+.card__btn {
+    @include font-source(1.4rem, 400, 2rem);
     @include media-tablet {
         font-size: 1.8rem;
         padding: 1.6rem 4.2rem;
@@ -301,5 +299,34 @@
     border-radius: 2.3rem;
     padding: 1.2rem 4.4rem;
     margin-right: 0;
+    transition: filter 0.3s;
+    &:hover {
+        filter: brightness(0.9);
+    }
 }
 
+.btn {
+    @include font-source(1.4rem, 400, 2.4rem, $neutral-regular);
+    @include media-tablet {
+        width: 7rem;
+        height: 2.7rem;
+        font-size: 1.6rem;
+    }
+    display: inline-block;
+    width: 6rem;
+    height: 2.4rem;
+    border: none;
+    padding: 0;
+    transition: color 0.3s, background-color 0.3s, box-shadow 0.3s;
+    background-color: $tags-color;
+    border-radius: 1.1rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+        color: $second-color;
+        background-color: $tag-active-color;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    }
+}

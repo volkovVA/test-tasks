@@ -1,42 +1,42 @@
 -
   const cardContent = [
-    {src:'./img/bridge/bridge.png', srcset:'./img/bridge/bridge@2x.png 1.25x, ./img/bridge/bridge@3x.png 2.25x', alt:'мост', title:'Обзорная экскурсия по рекам и каналам с остановками Hop on Hop Off 2020', time:'2 часа', desc: ['Билет на целый день','Неограниченное число катаний','6 остановок у главных достопримечательностей','Ближайший рейс сегодня'], tags: ['12:00','12:00','12:00'], price:'900 ₽', priceBerth:'1200 ₽ на причале', info:'новинка'},
-    {src:'./img/church/church.png', srcset:'./img/church/church@2x.png 1.25x, ./img/church/church@3x.png 2.25x', alt:'мост', title:'Обзорная экскурсия по рекам и каналам с остановками Hop on Hop Off 2020', time:'2 часа', desc: ['Билет на целый день','Неограниченное число катаний','6 остановок у главных достопримечательностей','Ближайший рейс сегодня'], tags:['12:00','12:00','12:00', '12:00'], price:'900 ₽', priceBerth:'1200 ₽ на причале', info:'круглый год'},
-    {src:'./img/piano/piano.png', srcset:'./img/piano/piano@2x.png 1.25x, ./img/piano/piano@3x.png 2.25x', alt:'мост', title:'Обзорная экскурсия по рекам и каналам с остановками Hop on Hop Off 2020', time:'2 часа', desc: ['Билет на целый день','Неограниченное число катаний','6 остановок у главных достопримечательностей','Ближайший рейс сегодня'], tags:['12:00','12:00','12:00','12:00','12:00','12:00'], price:'900 ₽', priceBerth:'1200 ₽ на причале', info: 'новинка'},
+    {src:'./img/bridge/bridge.jpg', srcset:'./img/bridge/bridge@2x.jpg 1.25x, ./img/bridge/bridge@3x.jpg 2.25x', alt:'мост', title:'Обзорная экскурсия по рекам и каналам с остановками Hop on Hop Off 2020', time:'2 часа', desc: ['Билет на целый день', 'Неограниченное число катаний','6 остановок у главных достопримечательностей','Ближайший рейс:'], tags: ['12:00','12:00','12:00'], price:'900 ₽', priceBerth:'1200 ₽ на причале', info:'новинка'},
+    {src:'./img/church/church.jpg', srcset:'./img/church/church@2x.jpg 1.25x, ./img/church/church@3x.jpg 2.25x', alt:'церковь', title:'Обзорная экскурсия по рекам и каналам с остановками Hop on Hop Off 2020', time:'2 часа', desc: ['Билет на целый день','Неограниченное число катаний','6 остановок у главных достопримечательностей','Ближайший рейс:'], tags:['12:00','12:00','12:00', '12:00'], price:'900 ₽', priceBerth:'1200 ₽ на причале', info:'круглый год'},
+    {src:'./img/piano/piano.jpg', srcset:'./img/piano/piano@2x.jpg 1.25x, ./img/piano/piano@3x.jpg 2.25x', alt:'пианино', title:'Обзорная экскурсия по рекам и каналам с остановками Hop on Hop Off 2020', time:'2 часа', desc: ['Билет на целый день','Неограниченное число катаний','6 остановок у главных достопримечательностей','Ближайший рейс:'], tags:['12:00','12:00','12:00','12:00','12:00','12:00'], price:'900 ₽', priceBerth:'1200 ₽ на причале', info: 'новинка'},
   ]
 
 mixin card(src, srcset, alt, title, time, desc, tags, price, priceBerth, info, index)
   article.card
     .card__picture
-      img.card__img.card__img--mobile(src="./img/kazan-cathedral/kazan-cathedral.png", srcset='./img/kazan-cathedral/kazan-cathedral@2x.png 1.25x, ./img/kazan-cathedral/kazan-cathedral@3x.png 2.25x', alt="казанский кафедральный собор")
+      img.card__img.card__img--mobile(src="./img/kazan-cathedral/kazan-cathedral.jpg", srcset='./img/kazan-cathedral/kazan-cathedral@2x.jpg 1.25x, ./img/kazan-cathedral/kazan-cathedral@3x.jpg 2.25x', alt="казанский кафедральный собор")
       img.card__img(src= src, srcset= srcset, alt= alt)
     if index == 0
-      .card__info.card__info--new= info
+      span.card__info.card__info--new= info
     else if index == 1
-      .card__info.card__info--yearround= info
-      .card__info.card__info--newmobile новинка
+      span.card__info.card__info--yearround= info
+      span.card__info.card__info--newmobile новинка
     else
-      .card__info.card__info--newpurple= info
+      span.card__info.card__info--newpurple= info
     .card__description
       h2.card__title #[span.card__action акция -] #{title}
       span.card__time= time
       .card__lists
         ul.card__desc-list
           each item, descIndex in desc
-            if descIndex == 3
+            if descIndex == desc.length-1
               li.card__desc-item= item
-                ul.card__tags-list
-                  each item, tagIndex in tags
-                    if index == 0 && tagIndex == 1
-                      li.card__tags-item.active= item
-                    else
-                      li.card__tags-item= item
+                span &nbspсегодня
+                span
+                  ul.card__tags-list
+                    each item in tags
+                      li.card__tags-item
+                        a.card__tags-link(href="#" target="_blank")= item
             else
               li.card__desc-item= item
-      .card__footer
+      .card__price-box
         .card__price
           if index == 2
             .card__rate.card__rate--mobile 2900 ₽
-          .card__rate= price
-          .card__rateberth= priceBerth
-        a.card__link(href="#") Подробнее
+          span.card__rate= price
+          span.card__rateberth= priceBerth
+        a.card__btn(href="#" target="_blank") Подробнее
