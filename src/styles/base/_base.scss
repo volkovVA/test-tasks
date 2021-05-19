@@ -1,3 +1,7 @@
 .title {
   @include font-source(2.4rem, 900, 3.3rem, $neutral-light);
 }
+
+section {
+  padding: 14rem 0;
+}

@@ -1,0 +1,20 @@
+-
+  const aboutUsItems = [
+    {count:'90', text:'Завершено крупных сделок', link:'Все кейсы'},
+    {count:'90', text:'Завершено крупных сделок', link:'Все кейсы'},
+    {count:'90', text:'Завершено крупных сделок', link:'Все кейсы'},
+    {count:'90', text:'Завершено крупных сделок', link:'Все кейсы'}
+  ]
+
+section.about-us
+  .container.about-us__container
+    .about-us__column
+      h2.title.about-us__title О нас
+      h3.about-us__text Компания #[span ИвановПром]
+      p.about-us__desc Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.
+    ul.about-us__box
+      each item in aboutUsItems
+        li.about-us__card
+          .about-us__count= item.count
+          span.about-us__info= item.text
+          a.about-us__link(href="#")= item.link

@@ -1,5 +1,5 @@
 .our-services {
-  padding: 14rem 0;
+  background-color: $secondfont-color;
 }
 
 .our-services__title {
@@ -8,7 +8,7 @@
 
 .our-services__text {
   font-family: Merriweather;
-  @include font-source(4.8rem, 900, 6.9rem, $neutral-secondary);
+  @include font-source(4.8rem, 900, $neutral-secondary);
   margin-bottom: 10.2rem;
 }
 
@@ -25,11 +25,11 @@
   flex-direction: column;
   justify-content: flex-end;
   width: 350px;
-  height: 360px;
+  min-height: 360px;
   padding: 0 4.5rem 4.5rem;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('./../img/our-services/our-services.jpg');
 }
 
 .our-services__desc {
-  @include font-source(2.4rem, 900, 3rem, $main-color);
+  @include font-source(2.4rem, 900, $main-color);
 }

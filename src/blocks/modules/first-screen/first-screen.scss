@@ -24,13 +24,13 @@
 
 .first-screen__title {
   font-family: Merriweather;
-  @include font-source(4.8rem, 700, 6.6rem, $main-color);
+  @include font-source(4.8rem, 700, $main-color);
   width: 58.9rem;
   margin-bottom: 8rem;
 }
 
 .first-screen__link {
-  @include font-source(1.8rem, 400, 2.5rem, $main-color);
+  @include font-source(1.8rem, 400, $main-color);
   background-color: $primary-color;
   padding: 1.9rem 7.9rem;
   margin-bottom: 12rem  ;

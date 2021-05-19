@@ -28,5 +28,5 @@
 }
 
 .header__phone, .header__shedule, .header__email, .header__geo {
-  @include font-source(1.3rem, 400, 1.7rem);
+  @include font-source(1.3rem, 400);
 }

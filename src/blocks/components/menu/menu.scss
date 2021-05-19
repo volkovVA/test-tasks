@@ -4,6 +4,6 @@
 }
 
 .menu__link {
-  @include font-source(1.4rem, 700, 1.7rem);
+  @include font-source(1.4rem, 700);
   text-transform: uppercase;
 }
