@@ -1,0 +1,35 @@
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0, 0.85);
+  z-index: 2;
+}
+
+.modal__title {
+  font-family: Merriweather;
+  @include font-source(4.8rem, 900, $neutral-secondary, 5.9rem);
+  margin-bottom: 7.7rem;
+}
+
+.modal__box {
+  position: relative;
+  opacity: 1;
+  @include flex-center;
+  flex-direction: column;
+  width: 73rem;
+  height: 55rem;
+  background-color: $main-color;
+  padding: 5rem 9.5rem;
+  & * {
+    color: $neutral-primary;
+  }
+  & .form__input, & .form__textarea {
+    border-bottom: 1px solid $border;
+  }
+}
