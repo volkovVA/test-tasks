@@ -2,6 +2,11 @@
   @include font-source(2.4rem, 900, $neutral-light);
 }
 
+.heading {
+  font-family: Merriweather;
+  @include font-source(4.8rem, 900, $neutral-secondary);
+}
+
 section {
   padding: 14rem 0;
 }

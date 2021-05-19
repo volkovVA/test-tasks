@@ -11,9 +11,7 @@
   z-index: 2;
 }
 
-.modal__title {
-  font-family: Merriweather;
-  @include font-source(4.8rem, 900, $neutral-secondary, 5.9rem);
+.modal__heading {
   margin-bottom: 7.7rem;
 }
 

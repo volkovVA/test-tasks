@@ -1,4 +1,14 @@
 .logo {
   width: rem(40);
   height: rem(40);
+  display: flex;
+  align-items: center;
+  & > img {
+    margin-right: 3rem;
+  }
+}
+
+.logo__text {
+  font-family: Merriweather;
+  @include font-source(3rem, 900, $primary-color);
 }

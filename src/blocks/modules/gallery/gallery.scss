@@ -2,9 +2,7 @@
   background-color: $secondfont-color;
 }
 
-.gallery__text {
-  font-family: Merriweather;
-  @include font-source(4.8rem, 900, $neutral-secondary);
+.gallery__heading {
   margin-bottom: 4.2rem;
 }
 

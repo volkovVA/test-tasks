@@ -1,15 +1,15 @@
 -
   const galleryItems = [
-    {src:'./../img/image_1/image_1.jpg', alt:'девушка'},
-    {src:'./../img/image_4/image_4.jpg', alt:'девушка'},
-    {src:'./../img/image_2/image_2.jpg', alt:'девушка'},
-    {src:'./../img/image_3/image_3.jpg', alt:'девушка'}
+    {src:'./../img/image_1/image_1.jpg', srcset:'./img/image_1.jpg/image_1.jpg@2x.jpg 1.25x, ./img/image_1.jpg/image_1.jpg@3x.jpg 2.25x', alt:'фото'},
+    {src:'./../img/image_4/image_4.jpg', srcset:'./img/image_4/image_4@2x.jpg 1.25x, ./img/image_4/image_4@3x.jpg 2.25x', alt:'фото'},
+    {src:'./../img/image_2/image_2.jpg', srcset:'./img/image_2/image_2@2x.jpg 1.25x, ./img/image_2/image_2@3x.jpg 2.25x', alt:'фото'},
+    {src:'./../img/image_3/image_3.jpg', srcset:'./img/image_3/image_3@2x.jpg 1.25x, ./img/image_3/image_3@3x.jpg 2.25x', alt:'фото'}
   ]
 
 section.gallery
   .container
-    h3.gallery__text Фотогалерея
+    h3.heading.gallery__heading Фотогалерея
     ul.gallery__box
       each item in galleryItems
         li.gallery__item
-          img(src= item.src, alt= item.alt)
+          img(src= item.src, srcset= item.srcset, alt= item.alt)

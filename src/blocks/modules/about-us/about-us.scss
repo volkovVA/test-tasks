@@ -11,9 +11,7 @@
   margin-bottom: 4rem;
 }
 
-.about-us__text {
-  font-family: Merriweather;
-  @include font-source(4.8rem, 900, $neutral-secondary, 5.9rem);
+.about-us__heading {
   margin-bottom: 6rem;
   & span {
     color: $primary-color;
@@ -21,7 +19,7 @@
 }
 
 .about-us__desc {
-  @include font-source(1.8rem, 400, $default-color);
+  @include font-source(1.8rem, 300, $default-color);
 }
 
 .about-us__box {

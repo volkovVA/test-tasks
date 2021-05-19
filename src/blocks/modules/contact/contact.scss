@@ -8,6 +8,12 @@
     width: 100%;
     height: 100%;
     background-image: url('./../img/first-screen/first-screen.jpg');
+    @include bg-2x {
+      background-image: url('./../img/first-screen/first-screen@2x.jpg');
+    }
+    @include bg-3x {
+      background-image: url('./../img/first-screen/first-screen@3x.jpg');
+    }
     background-size: cover;
     filter: brightness(40%);
   }
@@ -26,10 +32,9 @@
   padding-right: 10rem;
 }
 
-.contact__text {
-  font-family: Merriweather;
-  @include font-source(4.8rem, 900, $main-color, 5.9rem);
+.contact__heading {
   margin-bottom: 6rem;
+  color: $main-color;
 }
 
 .contact__desc {

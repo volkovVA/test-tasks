@@ -1,22 +1,16 @@
 -
   const faqItems = [
-    {src:'./../img/image_1/image_1.jpg', alt:'картинка 1'},
-    {src:'./../img/image_4/image_4.jpg', alt:'картинка 2'},
-    {src:'./../img/image_2/image_2.jpg', alt:'картинка 3'},
-    {src:'./../img/image_3/image_3.jpg', alt:'картинка 4'}
+    {question:'первый вопрос', text:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, pariatur aspernatur! Voluptatem deleniti dolore voluptatum ullam soluta dolorum. Enim, eius esse molestias assumenda nam unde ducimus quos quasi officiis, facere qui illum commodi sequi ad hic reprehenderit ipsam numquam nesciunt dolorem soluta repellat adipisci, tempora exercitationem. Nemo excepturi recusandae aspernatur.'},
+    {question:'второй вопрос', text:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, pariatur aspernatur! Voluptatem deleniti dolore voluptatum ullam soluta dolorum. Enim, eius esse molestias assumenda nam unde ducimus quos quasi officiis, facere qui illum commodi sequi ad hic reprehenderit ipsam numquam nesciunt dolorem soluta repellat adipisci, tempora exercitationem. Nemo excepturi recusandae aspernatur.'},
+    {question:'третий вопрос', text:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, pariatur aspernatur! Voluptatem deleniti dolore voluptatum ullam soluta dolorum. Enim, eius esse molestias assumenda nam unde ducimus quos quasi officiis, facere qui illum commodi sequi ad hic reprehenderit ipsam numquam nesciunt dolorem soluta repellat adipisci, tempora exercitationem. Nemo excepturi recusandae aspernatur.'}
   ]
 
 section.faq
   .container
     h2.title.faq__title faq
-    h3.faq__text Ответы на #[span Вопросы]
+    h3.heading.faq__heading Ответы на #[span Вопросы]
     .faq__acc
-      .faq__acc-item.active
-        span.faq__question первый вопрос
-        p.faq__answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, tempora.
-      .faq__acc-item
-        span.faq__question Второй
-        p.faq__answer Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam
-      .faq__acc-item
-        span.faq__question Третий
-        p.faq__answer Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam
+      each item in faqItems
+        .faq__acc-item
+          span.faq__question= item.question
+          p.faq__answer= item.text

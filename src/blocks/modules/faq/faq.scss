@@ -5,7 +5,13 @@
     display: block;
     position: absolute;
     right: 10%;
-    background-image: url('../../../img/faq/img-faq.png');
+    background-image: url('./../img/faq/img-faq.png');
+    @include bg-2x {
+      background-image: url('./../img/faq/img-faq@2x.jpg');
+    }
+    @include bg-3x {
+      background-image: url('./../img/faq/img-faq@3x.jpg');
+    }
     width: 35rem;
     height: 68rem;
   }
@@ -16,10 +22,8 @@
   margin-bottom: 4rem;
 }
 
-.faq__text {
+.faq__heading {
   width: 30rem;
-  font-family: Merriweather;
-  @include font-source(4.8rem, 900, $neutral-secondary, 5.9rem);
   margin-bottom: 6rem;
   & span {
     color: $primary-color;
@@ -44,7 +48,7 @@
     }
     & .faq__question {
       &::before {
-        content: url('../../../img/svg/-.svg');
+        content: url('./../img/svg/-.svg');
         padding-bottom: 5px;
       }
     }
@@ -57,7 +61,7 @@
   padding: 3rem 6.3rem;
   text-transform: uppercase;
   &::before {
-    content: url('../../../img/svg/+.svg');
+    content: url('./../img/svg/+.svg');
     margin-right: 10px;
   }
 }

@@ -9,7 +9,13 @@
     width: 100%;
     height: 100%;
     background-image: url('./../img/first-screen/first-screen.jpg');
-    filter: brightness(40%);
+    @include bg-2x {
+      background-image: url('./../img/first-screen/first-screen@2x.jpg');
+    }
+    @include bg-3x {
+      background-image: url('./../img/first-screen/first-screen@3x.jpg');
+    }
+    filter: brightness(30%);
   }
 }
 
