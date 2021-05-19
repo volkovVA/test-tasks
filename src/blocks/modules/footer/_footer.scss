@@ -1,0 +1,12 @@
+.footer {
+  padding: 4rem 0 3rem;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__text {
+  @include font-source(1.4rem, 300, $default-color);
+}
