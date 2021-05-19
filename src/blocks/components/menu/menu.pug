@@ -1,0 +1,13 @@
+-
+  const menuItems = [
+    {name: 'главная', href: '#'},
+    {name: 'услуги', href: '#'},
+    {name: 'кейсы', href: '#'},
+    {name: 'о компании', href: '#'},
+    {name: 'контакты', href: '#'},
+  ]
+
+ul.menu
+  each item in menuItems
+    li.menu__item
+      a.menu__link(href= item.href)= item.name

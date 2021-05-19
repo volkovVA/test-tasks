@@ -1,0 +1,23 @@
+.header
+  .container.header__container
+    include ../../components/logo/logo.pug
+    .header__content
+      ul.header__list
+        li.header__item
+          svg.header__icon
+            use(xlink:href="./../img/svg/sprite.svg#phone")
+          a.header__phone(href="+81112223344") 8(111)222-33-44
+        li.header__item
+          svg.header__icon
+            use(xlink:href="./../img/svg/sprite.svg#clock")
+          span.header__shedule Пн-Пт 10:00-18:00
+        li.header__item
+          svg.header__icon
+            use(xlink:href="./../img/svg/sprite.svg#mail")
+          a.header__email(href="mailto:order@buhone.ru") order@buhone.ru
+        li.header__item
+          svg.header__icon
+            use(xlink:href="./../img/svg/sprite.svg#geo")
+          span.header__geo Невский пр. 130
+      nav.header__nav
+        include ../../components/menu/menu.pug

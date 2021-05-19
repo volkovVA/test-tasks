@@ -1,0 +1,9 @@
+.menu {
+  display: flex;
+  justify-content: space-between
+}
+
+.menu__link {
+  @include font-source(1.4rem, 700, 1.7rem);
+  text-transform: uppercase;
+}

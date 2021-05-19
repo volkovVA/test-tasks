@@ -1,0 +1,32 @@
+.header {
+  margin: 2.2rem 0 3.1rem;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.header__item {
+  display: flex;
+  margin-right: 4rem;
+  &:last-child {
+    margin-right: 0   ;
+  }
+}
+
+.header__icon {
+  width: 17px;
+  height: 17px;
+  margin-right: 1.7rem;
+}
+
+.header__phone, .header__shedule, .header__email, .header__geo {
+  @include font-source(1.3rem, 400, 1.7rem);
+}
