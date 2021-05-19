@@ -11,17 +11,20 @@
     content: '';
     display: block;
     position: absolute;
-    right: 21%;
+    right: 0;
     bottom: 0;
-    background-image: url('./../img/faq/img-faq.png');
-    @include bg-2x {
-      background-image: url('./../img/faq/img-faq@2x.jpg');
-    }
-    @include bg-3x {
-      background-image: url('./../img/faq/img-faq@3x.jpg');
-    }
     width: 35rem;
     height: 68rem;
+    background-image: url('./../img/faq/img-faq.png');
+    @include bg-2x {
+      background-image: url('./../img/faq/img-faq@2x.png');
+    }
+    @include bg-3x {
+      background-image: url('./../img/faq/img-faq@3x.png');
+    }
+    @include media-tablet {
+      visibility: hidden;
+    }
   }
 }
 
@@ -39,7 +42,9 @@
 }
 
 .faq__acc {
+  position: relative;
   max-width: 73rem;
+  z-index: 1;
   @include media-mobile {
     max-width: 100%;
   }
@@ -73,6 +78,7 @@
   @include font-source(1.4rem, 700, $neutral-primary, 1.4rem);
   padding: 3.2rem 2.8rem;
   text-transform: uppercase;
+  cursor: pointer;
   &::before {
     content: url('./../img/svg/+.svg');
     margin-right: 2rem;

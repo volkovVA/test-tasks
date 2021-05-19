@@ -1,6 +1,8 @@
 .gallery {
+  position: relative;
   background-color: $secondfont-color;
   padding: 13.5rem 0 14rem;
+  z-index: 1;
   @include media-tablet {
     padding: 4rem 0 8rem;
   }
