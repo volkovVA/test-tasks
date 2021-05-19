@@ -5,6 +5,15 @@
 .heading {
   font-family: Merriweather;
   @include font-source(4.8rem, 900, $neutral-secondary);
+  @include media-mobile {
+    font-size: 3rem;
+  }
+  @include media-mobile-min {
+    font-size: 2.5rem;
+  }
+  @include media-mobile-horizontal {
+    font-size: 2rem;
+  }
 }
 
 section {

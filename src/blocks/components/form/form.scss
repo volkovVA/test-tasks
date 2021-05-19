@@ -5,8 +5,17 @@
 .form__row {
   display: flex;
   margin-bottom: 2.3rem;
+  @include media-mobile-horizontal {
+    margin-bottom: 1rem;
+  }
   &:nth-child(2) {
     margin-bottom: 5rem;
+    @include media-mobile {
+      margin-bottom: 8rem;
+    }
+    @include media-mobile-horizontal {
+      margin-bottom: 1rem;
+    }
   }
   &:last-child {
     margin-bottom: 0;
@@ -47,6 +56,9 @@
 .form__textarea {
   height: 11rem;
   resize: none;
+  @include media-mobile-horizontal {
+    height: 7rem;
+  }
 }
 
 .form__btn {

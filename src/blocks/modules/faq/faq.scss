@@ -1,6 +1,12 @@
 .faq {
   position: relative;
   padding: 11.2rem 0 7rem;
+  @include media-tablet {
+    padding: 4rem 0 8rem;
+  }
+  @include media-mobile-horizontal {
+    padding: 4rem 0 8rem;
+  }
   &::before {
     content: '';
     display: block;
@@ -34,6 +40,12 @@
 
 .faq__acc {
   max-width: 73rem;
+  @include media-mobile {
+    max-width: 100%;
+  }
+  @include media-mobile-horizontal {
+    max-width: 100%;
+  }
 }
 
 .faq__acc-item {

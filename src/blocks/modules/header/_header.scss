@@ -1,22 +1,36 @@
 .header {
-  margin: 2.2rem 0 3.1rem;
+  padding: 2.2rem 0 3.1rem;
 }
 
 .header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include media-tablet {
+    display: block;
+  }
+  @include media-mobile-horizontal {
+    display: block;
+  }
 }
 
 .header__list {
   display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
+  @include media-mobile {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 
 .header__item {
   display: flex;
   margin-right: 5rem;
+  @include media-mobile {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
   &:last-child {
     margin-right: 0   ;
   }

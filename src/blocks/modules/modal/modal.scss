@@ -13,6 +13,9 @@
 
 .modal__heading {
   margin-bottom: 4.5rem;
+  @include media-mobile-horizontal {
+    margin-bottom: 1rem;
+  }
 }
 
 .modal__box {
@@ -20,12 +23,21 @@
   opacity: 1;
   display: flex;
   justify-content: flex-start;
-  align-items: color;
+  align-items: center;
   flex-direction: column;
   width: 73rem;
   height: 55rem;
   background-color: $main-color;
   padding: 3.5rem 9.5rem;
+  @include media-tablet {
+    width: 100%;
+    padding: 2rem;
+  }
+  @include media-mobile-horizontal {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+  }
   & * {
     color: $neutral-primary;
   }

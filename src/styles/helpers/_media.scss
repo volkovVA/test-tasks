@@ -7,6 +7,13 @@
   }
 }
 
+@mixin media-mobile-min {
+
+  @media (max-width: $mediaWidthMobileMin) {
+      @content;
+  }
+}
+
 @mixin media-tablet {
 
     @media (max-width: $mediaWidthTablet) {
@@ -14,9 +21,9 @@
     }
 }
 
-@mixin media-tablet-horizontal {
+@mixin media-mobile-horizontal {
 
-    @media (max-width: $mediaWidthTabletHorizontal) {
+    @media (max-width: $mediaWidthTabletHorizontal) and (orientation: landscape) {
         @content;
     }
 }

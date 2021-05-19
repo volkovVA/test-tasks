@@ -1,9 +1,32 @@
 .menu {
   display: flex;
-  justify-content: space-between
+  justify-content: space-between;
+  @include media-mobile {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  @include media-mobile-min {
+    align-items: flex-end;
+  }
 }
 
 .menu__link {
   @include font-source(1.4rem, 700);
   text-transform: uppercase;
+}
+
+.menu__item {
+  @include media-mobile {
+    margin-right: 5rem;
+    margin-bottom: 1rem;
+    &:last-child, &:nth-child(3) {
+      margin-right: 0;
+      @include media-mobile-min {
+        margin-right: 2rem;
+      }
+    }
+  }
+  @include media-mobile-min {
+    margin-right: 2rem;
+  }
 }

@@ -1,6 +1,12 @@
 .contact {
   position: relative;
   padding: 11.6rem 0 13rem;
+  @include media-tablet {
+    padding: 4rem 0 8rem;
+  }
+  @include media-mobile-horizontal {
+    padding: 4rem 0 8rem;
+  }
   &:before {
     content: "";
     position: absolute;
@@ -27,10 +33,24 @@
 .contact__box {
   display: flex;
   margin-bottom: 4rem;
+  @include media-tablet {
+    display: block;
+  }
+  @include media-mobile-horizontal {
+    display: block;
+  }
 }
 
 .contact__content {
   margin-right: 11.8rem;
+  @include media-tablet {
+    margin-right: 0;
+    margin-bottom: 4rem;
+  }
+  @include media-mobile-horizontal {
+    margin-right: 0;
+    margin-bottom: 4rem;
+  }
 }
 
 .contact__heading {
@@ -42,16 +62,26 @@
   width: 45rem;
   @include font-source(1.8rem, 300, $main-color);
   margin-bottom: 7.3rem;
+  @include media-mobile {
+    width: 100%;
+  }
 }
 
 .contact__list {
   display: flex;
+  @include media-mobile {
+    display: block;
+  }
 }
 
 .contact__item {
   display: flex;
   align-items: center;
   margin-right: 2.3rem;
+  @include media-mobile {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
   &:last-child {
     margin-right: 0;
   }

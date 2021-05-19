@@ -1,5 +1,11 @@
 .our-services {
   background-color: $secondfont-color;
+  @include media-tablet {
+    padding: 4rem 0 8rem;
+  }
+  @include media-mobile-horizontal {
+    padding: 4rem 0 8rem;
+  }
 }
 
 .our-services__title {
@@ -8,6 +14,9 @@
 
 .our-services__heading {
   margin-bottom: 8.5rem;
+  @include media-mobile {
+    margin-bottom: 3rem;
+  }
 }
 
 .our-services__box {
@@ -15,6 +24,18 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 3rem;
+  @include media-tablet {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  @include media-mobile {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  @include media-mobile-horizontal {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
 }
 
 .our-services__card {
@@ -31,6 +52,9 @@
   }
   @include bg-3x {
     background-image: url('./../img/our-services/our-services@3x.jpg');
+  }
+  @include media-mobile {
+    width: 100%;
   }
 }
 
