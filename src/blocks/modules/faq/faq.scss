@@ -1,10 +1,12 @@
 .faq {
   position: relative;
+  padding: 11.2rem 0 7rem;
   &::before {
     content: '';
     display: block;
     position: absolute;
-    right: 10%;
+    right: 21%;
+    bottom: 0;
     background-image: url('./../img/faq/img-faq.png');
     @include bg-2x {
       background-image: url('./../img/faq/img-faq@2x.jpg');
@@ -19,16 +21,15 @@
 
 .faq__title {
   text-transform: uppercase;
-  margin-bottom: 4rem;
+  margin-bottom: 2.7rem;
 }
 
 .faq__heading {
   width: 30rem;
-  margin-bottom: 6rem;
+  margin-bottom: 4.6rem;
   & span {
     color: $primary-color;
   }
-  margin-bottom: 6.1rem;
 }
 
 .faq__acc {
@@ -58,16 +59,16 @@
 .faq__question {
   display: flex;
   @include font-source(1.4rem, 700, $neutral-primary, 1.4rem);
-  padding: 3rem 6.3rem;
+  padding: 3.2rem 2.8rem;
   text-transform: uppercase;
   &::before {
     content: url('./../img/svg/+.svg');
-    margin-right: 10px;
+    margin-right: 2rem;
   }
 }
 
 .faq__answer {
   display: none;
   @include font-source(1.6rem, 300, $main-color);
-  padding: 0 3rem 3rem;
+  padding: 0 3rem 1.3rem;
 }

@@ -4,7 +4,10 @@
 
 .form__row {
   display: flex;
-  margin-bottom: 3.5rem;
+  margin-bottom: 2.3rem;
+  &:nth-child(2) {
+    margin-bottom: 5rem;
+  }
   &:last-child {
     margin-bottom: 0;
   }
@@ -24,7 +27,7 @@
 .form__name {
   display: block;
   @include font-source(1.6rem, 400, $main-color);
-  margin-bottom: 1.5rem;
+  padding-top: 1.4rem;
 }
 
 .form__input, .form__textarea {
@@ -38,7 +41,7 @@
 }
 
 .form__input {
-  padding: 1.5rem 0;
+  padding: 1.2rem 0;
 }
 
 .form__textarea {
@@ -50,7 +53,7 @@
   @include font-source(1.8rem, 400, $main-color);
   background-color: $primary-color;
   border: 0;
-  padding: 1.9rem 6rem;
+  padding: 1.9rem 4.3rem;
   cursor: pointer;
 }
 

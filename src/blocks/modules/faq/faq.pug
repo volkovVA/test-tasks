@@ -10,7 +10,12 @@ section.faq
     h2.title.faq__title faq
     h3.heading.faq__heading Ответы на #[span Вопросы]
     .faq__acc
-      each item in faqItems
-        .faq__acc-item
-          span.faq__question= item.question
-          p.faq__answer= item.text
+      each item, index in faqItems
+        if index == 0
+          .faq__acc-item.active
+            span.faq__question= item.question
+            p.faq__answer= item.text
+        else
+          .faq__acc-item
+            span.faq__question= item.question
+            p.faq__answer= item.text

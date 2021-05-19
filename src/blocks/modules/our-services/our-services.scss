@@ -3,11 +3,11 @@
 }
 
 .our-services__title {
-  margin-bottom: 4rem;
+  margin-bottom: 2.8rem;
 }
 
 .our-services__heading {
-  margin-bottom: 10.2rem;
+  margin-bottom: 8.5rem;
 }
 
 .our-services__box {
@@ -24,7 +24,7 @@
   justify-content: flex-end;
   width: 350px;
   min-height: 360px;
-  padding: 0 4.5rem 4.5rem;
+  padding: 0 4.5rem 4rem;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('./../img/our-services/our-services.jpg');
   @include bg-2x {
     background-image: url('./../img/our-services/our-services@2x.jpg');
@@ -35,5 +35,5 @@
 }
 
 .our-services__desc {
-  @include font-source(2.4rem, 900, $main-color);
+  @include font-source(2.4rem, 900, $main-color, 3rem);
 }

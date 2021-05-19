@@ -12,18 +12,20 @@
 }
 
 .modal__heading {
-  margin-bottom: 7.7rem;
+  margin-bottom: 4.5rem;
 }
 
 .modal__box {
   position: relative;
   opacity: 1;
-  @include flex-center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: color;
   flex-direction: column;
   width: 73rem;
   height: 55rem;
   background-color: $main-color;
-  padding: 5rem 9.5rem;
+  padding: 3.5rem 9.5rem;
   & * {
     color: $neutral-primary;
   }

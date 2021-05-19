@@ -1,5 +1,6 @@
 .contact {
   position: relative;
+  padding: 11.6rem 0 13rem;
   &:before {
     content: "";
     position: absolute;
@@ -29,18 +30,18 @@
 }
 
 .contact__content {
-  padding-right: 10rem;
+  margin-right: 11.8rem;
 }
 
 .contact__heading {
-  margin-bottom: 6rem;
   color: $main-color;
+  margin-bottom: 4.3rem;
 }
 
 .contact__desc {
   width: 45rem;
   @include font-source(1.8rem, 300, $main-color);
-  margin-bottom: 8rem;
+  margin-bottom: 7.3rem;
 }
 
 .contact__list {
@@ -50,17 +51,17 @@
 .contact__item {
   display: flex;
   align-items: center;
-  margin-right: 4rem;
+  margin-right: 2.3rem;
   &:last-child {
     margin-right: 0;
   }
 }
 
 .contact__icon {
-  width: 3rem;
+  width: 4rem;
   height: 3rem;
   fill: $main-color;
-  margin-right: 1.5rem;
+  margin-right: 0.3rem;
 }
 
 .contact__phone, .contact__email {

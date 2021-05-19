@@ -1,6 +1,6 @@
 .logo {
-  width: rem(40);
-  height: rem(40);
+  width: 5rem;
+  height: 5rem;
   display: flex;
   align-items: center;
   & > img {
@@ -10,5 +10,6 @@
 
 .logo__text {
   font-family: Merriweather;
-  @include font-source(3rem, 900, $primary-color);
+  @include font-source(3.6rem, 900, $primary-color);
+  padding-top: 12px;
 }

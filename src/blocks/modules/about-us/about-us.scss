@@ -1,3 +1,7 @@
+.about-us {
+  padding: 13.7rem 0;
+}
+
 .about-us__container {
   display: flex;
   justify-content: space-between;
@@ -8,11 +12,11 @@
 }
 
 .about-us__title {
-  margin-bottom: 4rem;
+  margin-bottom: 2.8rem;
 }
 
 .about-us__heading {
-  margin-bottom: 6rem;
+  margin-bottom: 4.3rem;
   & span {
     color: $primary-color;
   }
@@ -26,7 +30,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 3rem;
+  gap: 2.8rem;
+  padding-top: 2.5rem;
 }
 
 .about-us__card {
@@ -35,7 +40,7 @@
   width: 25.5rem;
   min-height: 25.5rem;
   background-color: $secondfont-color;
-  padding: 3rem 4rem 4rem;
+  padding: 2.5rem 3.7rem 4rem;
   &:last-child {
     background-color: $primary-color;
     & > * {
@@ -46,7 +51,7 @@
 
 .about-us__count {
   @include font-source(5.5rem, 900, $default-color);
-  margin-bottom: 3rem;
+  margin-bottom: 1.1rem;
 }
 
 .about-us__info {
