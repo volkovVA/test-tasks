@@ -1,0 +1,69 @@
+.faq {
+  position: relative;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 10%;
+    background-image: url('../../../img/faq/img-faq.png');
+    width: 35rem;
+    height: 68rem;
+  }
+}
+
+.faq__title {
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+}
+
+.faq__text {
+  width: 30rem;
+  font-family: Merriweather;
+  @include font-source(4.8rem, 900, $neutral-secondary, 5.9rem);
+  margin-bottom: 6rem;
+  & span {
+    color: $primary-color;
+  }
+  margin-bottom: 6.1rem;
+}
+
+.faq__acc {
+  max-width: 73rem;
+}
+
+.faq__acc-item {
+  background-color: $secondfont-color;
+  margin-bottom: 1px;
+  &.active {
+    & > * {
+      background-color: $primary-color;
+      color: $main-color;
+    }
+    & .faq__answer {
+      display: block;
+    }
+    & .faq__question {
+      &::before {
+        content: url('../../../img/svg/-.svg');
+        padding-bottom: 5px;
+      }
+    }
+  }
+}
+
+.faq__question {
+  display: flex;
+  @include font-source(1.4rem, 700, $neutral-primary, 1.4rem);
+  padding: 3rem 6.3rem;
+  text-transform: uppercase;
+  &::before {
+    content: url('../../../img/svg/+.svg');
+    margin-right: 10px;
+  }
+}
+
+.faq__answer {
+  display: none;
+  @include font-source(1.6rem, 300, $main-color);
+  padding: 0 3rem 3rem;
+}

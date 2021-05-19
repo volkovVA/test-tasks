@@ -1,0 +1,22 @@
+-
+  const faqItems = [
+    {src:'./../img/image_1/image_1.jpg', alt:'картинка 1'},
+    {src:'./../img/image_4/image_4.jpg', alt:'картинка 2'},
+    {src:'./../img/image_2/image_2.jpg', alt:'картинка 3'},
+    {src:'./../img/image_3/image_3.jpg', alt:'картинка 4'}
+  ]
+
+section.faq
+  .container
+    h2.title.faq__title faq
+    h3.faq__text Ответы на #[span Вопросы]
+    .faq__acc
+      .faq__acc-item.active
+        span.faq__question первый вопрос
+        p.faq__answer Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, tempora.
+      .faq__acc-item
+        span.faq__question Второй
+        p.faq__answer Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam
+      .faq__acc-item
+        span.faq__question Третий
+        p.faq__answer Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam
