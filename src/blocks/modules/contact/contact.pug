@@ -1,0 +1,20 @@
+section.contact
+  .container.contact__container
+    .contact__box
+      .contact__content
+        h3.contact__text Связь с нами
+        p.contact__desc У вас остались вопросы? Напишите нам - мы ответим в ближайшее время!
+        ul.contact__list
+          li.contact__item
+            svg.contact__icon
+              use(xlink:href="./../img/svg/sprite.svg#phone")
+            a.contact__phone(href="+81112223344") 8(111)222-33-44
+          li.contact__item
+            svg.contact__icon
+              use(xlink:href="./../img/svg/sprite.svg#mail")
+            a.contact__email(href="mailto:order@buhone.ru") order@buhone.ru
+      include ../../components/form/form.pug
+    .contact__map
+
+
+

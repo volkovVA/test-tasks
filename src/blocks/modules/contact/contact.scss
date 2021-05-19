@@ -1,0 +1,69 @@
+.contact {
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./../img/first-screen/first-screen.jpg');
+    background-size: cover;
+    filter: brightness(40%);
+  }
+}
+
+.contact__container {
+  position: relative;
+}
+
+.contact__box {
+  display: flex;
+  margin-bottom: 4rem;
+}
+
+.contact__content {
+  padding-right: 10rem;
+}
+
+.contact__text {
+  font-family: Merriweather;
+  @include font-source(4.8rem, 900, $main-color, 5.9rem);
+  margin-bottom: 6rem;
+}
+
+.contact__desc {
+  width: 45rem;
+  @include font-source(1.8rem, 300, $main-color);
+  margin-bottom: 8rem;
+}
+
+.contact__list {
+  display: flex;
+}
+
+.contact__item {
+  display: flex;
+  align-items: center;
+  margin-right: 4rem;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.contact__icon {
+  width: 3rem;
+  height: 3rem;
+  fill: $main-color;
+  margin-right: 1.5rem;
+}
+
+.contact__phone, .contact__email {
+  @include font-source(2.1rem, 300, $main-color, 2.1rem);
+}
+
+.contact__map {
+  width: 100%;
+  height: 36rem;
+  background-image: url('./../img/map.png')
+}

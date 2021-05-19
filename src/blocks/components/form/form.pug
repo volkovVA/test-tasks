@@ -1,0 +1,17 @@
+form.form(action="")
+  .form__row
+    .form__col.form__col--mr
+      label
+        span.form__name Имя
+        input.form__input(name="name" type="text" placeholder="Иван")
+    .form__col
+      label
+        span.form__name Фамилия
+        input.form__input(name="name" type="text" placeholder="Иванов")
+  .form__row
+    .form__col
+      span.form__name Сообщение
+      textarea.form__textarea(name="comment" placeholder="Ваше сообщение")
+  .form__row
+    .form__col.form__col--btn
+      button.form__btn Отправить сообщение
