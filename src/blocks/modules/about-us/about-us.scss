@@ -13,7 +13,7 @@
 
 .about-us__text {
   font-family: Merriweather;
-  @include font-source(4.8rem, 900, $neutral-secondary, 5.9rem, );
+  @include font-source(4.8rem, 900, $neutral-secondary, 5.9rem);
   margin-bottom: 6rem;
   & span {
     color: $primary-color;

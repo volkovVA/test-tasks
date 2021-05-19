@@ -1,0 +1,34 @@
+.gallery {
+  background-color: $secondfont-color;
+}
+
+.gallery__text {
+  font-family: Merriweather;
+  @include font-source(4.8rem, 900, $neutral-secondary);
+  margin-bottom: 4.2rem;
+}
+
+.gallery__box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 3rem;
+}
+
+.gallery__item {
+  height: 25.5rem;
+  overflow: hidden;
+  &:first-child {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+  &:nth-child(2) {
+    height: 100%;
+    grid-area: 1 / 3 / 3 / 4;
+  }
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}

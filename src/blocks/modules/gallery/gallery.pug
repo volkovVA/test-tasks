@@ -1,0 +1,15 @@
+-
+  const galleryItems = [
+    {src:'./../img/image_1/image_1.jpg', alt:'девушка'},
+    {src:'./../img/image_4/image_4.jpg', alt:'девушка'},
+    {src:'./../img/image_2/image_2.jpg', alt:'девушка'},
+    {src:'./../img/image_3/image_3.jpg', alt:'девушка'}
+  ]
+
+section.gallery
+  .container
+    h3.gallery__text Фотогалерея
+    ul.gallery__box
+      each item in galleryItems
+        li.gallery__item
+          img(src= item.src, alt= item.alt)
