@@ -65,3 +65,6 @@ const closedGalleryModal = (el, x) => {
     }
   });
 };
+
+// Yandex Map
+
