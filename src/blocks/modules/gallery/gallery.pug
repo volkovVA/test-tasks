@@ -12,4 +12,4 @@ section.gallery
     ul.gallery__box
       each item in galleryItems
         li.gallery__item
-          img(src= item.src, srcset= item.srcset, alt= item.alt)
+          img.lazy(data-src= item.src, data-srcset= item.srcset, alt= item.alt)

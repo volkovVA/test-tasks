@@ -118,3 +118,8 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   });
 });
+
+// Lazy Load
+
+let myLazyLoad = new LazyLoad();
+myLazyLoad.update();
