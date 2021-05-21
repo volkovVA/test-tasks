@@ -1,32 +1,35 @@
 .menu {
-  display: flex;
-  justify-content: space-between;
-  @include media-mobile {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  @include media-mobile-min {
-    align-items: flex-end;
-  }
+    @include media-mobile {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    @include media-mobile-min {
+        align-items: flex-end;
+    }
+    display: flex;
+    justify-content: space-between;
 }
 
 .menu__link {
-  @include font-source(1.4rem, 700);
-  text-transform: uppercase;
+    @include font-source(1.4rem, 700);
+    text-transform: uppercase;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .menu__item {
-  @include media-mobile {
-    margin-right: 5rem;
-    margin-bottom: 1rem;
-    &:last-child, &:nth-child(3) {
-      margin-right: 0;
-      @include media-mobile-min {
-        margin-right: 2rem;
-      }
+    @include media-mobile {
+        margin-right: 5rem;
+        margin-bottom: 1rem;
+        &:last-child, &:nth-child(3) {
+            @include media-mobile-min {
+                margin-right: 2rem;
+            }
+            margin-right: 0;
+        }
     }
-  }
-  @include media-mobile-min {
-    margin-right: 2rem;
-  }
+    @include media-mobile-min {
+        margin-right: 2rem;
+    }
 }

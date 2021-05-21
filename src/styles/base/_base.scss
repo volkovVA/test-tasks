@@ -3,7 +3,7 @@
 }
 
 .heading {
-  font-family: Merriweather;
+  font-family: Merriweather, Arial, sans-serif;
   @include font-source(4.8rem, 900, $neutral-secondary);
   @include media-mobile {
     font-size: 3rem;
@@ -77,5 +77,77 @@ section {
     top: 13px;
     border-radius: 5px;
     transform: rotate(-45deg);
+  }
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slider-item {
+  position: relative;
+  @include media-mobile {
+    text-align: right;
+  }
+}
+
+.slider-pagination {
+  position: absolute;
+  display: flex;
+  bottom: 10rem;
+  @include media-mobile {
+    display: none;
+  }
+}
+
+.slider-buttons {
+  position: absolute;
+  display: flex;
+  bottom: 10rem;
+  right: 0;
+  @include media-mobile {
+    bottom: 0;
+  }
+}
+
+.slider-button-left, .slider-button-right {
+  position: relative;
+  width: 6rem;
+  height: 6rem;
+  background-color: rgba(255,255,255, 0.2);
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  bottom: 0;
+  right: 0;
+  transition: background-color 0.2s;
+  & svg {
+    width: 8px;
+    height: 15px;
+  }
+  &:hover {
+    background-color: rgba(255,255,255, 0.4);
+  }
+  &::after {
+    display: none;
+  }
+}
+
+.swiper-container {
+  height: 60%;
+  width: 100%;
+}
+
+.swiper-pagination-bullet {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 4rem;
+  background-color: $main-color;
+  z-index: 1;
+  opacity: 0.4;
+  &-active {
+    opacity: 1;
   }
 }

@@ -1,11 +1,12 @@
+/* eslint-disable */
 window.onload = function () {
-  activatedAcc();
-  activatedGalleryModal();
+  activateAcc();
+  activateGalleryModal();
 };
 
 // Accordion
 
-const activatedAcc = () => {
+const activateAcc = () => {
   const acc = document.querySelector('.faq__acc');
 
   acc.addEventListener('click', (event) => {
@@ -28,7 +29,7 @@ const activatedAcc = () => {
 
 // Gallery Modal Window
 
-const activatedGalleryModal = () => {
+const activateGalleryModal = () => {
   const galleryBox = document.querySelector('.gallery__box');
 
   galleryBox.addEventListener('click', (event) => {
@@ -37,16 +38,16 @@ const activatedGalleryModal = () => {
     if (target.parentElement.classList.contains('gallery__item')) {
       const srcAttr = target.getAttribute('src');
       const body = document.querySelector('body');
-      const html = createdHtml(srcAttr);
+      const html = createHtml(srcAttr);
       body.insertAdjacentHTML('beforeend', html);
       const modal = document.querySelector('.modal-image');
       const close = document.querySelector('.modal-icon');
-      closedGalleryModal(modal, close);
+      closeGalleryModal(modal, close);
     }
   });
 };
 
-const createdHtml = (src) => {
+const createHtml = (src) => {
   return `
     <div class="modal-image">
       <div class="modal-image__box">
@@ -57,7 +58,7 @@ const createdHtml = (src) => {
   `;
 };
 
-const closedGalleryModal = (el, x) => {
+const closeGalleryModal = (el, x) => {
   el.addEventListener('click', (event) => {
     target = event.target;
     if (target == el || target == x) {
@@ -66,5 +67,22 @@ const closedGalleryModal = (el, x) => {
   });
 };
 
-// Yandex Map
+// Swiper Slider
 
+const swiper = new Swiper('.swiper-container', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.slider-pagination',
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.slider-button-left',
+    prevEl: '.slider-button-right',
+  }
+});

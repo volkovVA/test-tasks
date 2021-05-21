@@ -1,71 +1,75 @@
 .form {
-  width: 100%;
+    width: 100%;
 }
 
 .form__row {
-  display: flex;
-  margin-bottom: 2.3rem;
-  @include media-mobile-horizontal {
-    margin-bottom: 1rem;
-  }
-  &:nth-child(2) {
-    margin-bottom: 5rem;
-    @include media-mobile {
-      margin-bottom: 8rem;
-    }
     @include media-mobile-horizontal {
-      margin-bottom: 1rem;
+        margin-bottom: 1rem;
     }
-  }
-  &:last-child {
-    margin-bottom: 0;
-  }
+    display: flex;
+    margin-bottom: 2.3rem;
+    &:nth-child(2) {
+        @include media-mobile {
+            margin-bottom: 8rem;
+        }
+        @include media-mobile-horizontal {
+            margin-bottom: 1rem;
+        }
+        margin-bottom: 5rem;
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .form__col {
-  flex: 1;
-  &--mr {
-    margin-right: 3rem;
-  }
-  &--btn {
-    display: flex;
-    justify-content: flex-end;
-  }
+    flex: 1;
+    &--mr {
+        margin-right: 3rem;
+    }
+    &--btn {
+        display: flex;
+        justify-content: flex-end;
+    }
 }
 
 .form__name {
-  display: block;
-  @include font-source(1.6rem, 400, $main-color);
-  padding-top: 1.4rem;
+    @include font-source(1.6rem, 400, $main-color);
+    display: block;
+    padding-top: 1.4rem;
 }
 
 .form__input, .form__textarea {
-  position: relative;
-  width: 100%;
-  border: 0;
-  outline: 0;
-  border-bottom: 1px solid $main-color;
-  background: none;
-  @include font-source(2.1rem, 300, $neutral-light);
+    @include font-source(2.1rem, 300, $neutral-light);
+    position: relative;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid $main-color;
+    background: none;
 }
 
 .form__input {
-  padding: 1.2rem 0;
+    padding: 1.2rem 0;
 }
 
 .form__textarea {
-  height: 11rem;
-  resize: none;
-  @include media-mobile-horizontal {
-    height: 7rem;
-  }
+    @include media-mobile-horizontal {
+        height: 7rem;
+    }
+    height: 11rem;
+    resize: none;
 }
 
 .form__btn {
-  @include font-source(1.8rem, 400, $main-color);
-  background-color: $primary-color;
-  border: 0;
-  padding: 1.9rem 4.3rem;
-  cursor: pointer;
+    @include font-source(1.8rem, 400, $main-color);
+    background-color: $primary-color;
+    border: 0;
+    padding: 1.9rem 4.3rem;
+    cursor: pointer;
+    transition: filter 0.2s;
+    &:hover {
+        filter: brightness(130%);
+    }
 }
 
