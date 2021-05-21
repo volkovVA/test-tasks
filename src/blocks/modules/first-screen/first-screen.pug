@@ -1,25 +1,20 @@
+-
+  const firstScreenItems = ['Бухгалтерские услуги в Санкт-Петербурге', 'Аудиторские услуги в Санкт-Петербурге','Услуги расчета налогов в Санкт-Петербурге','Консультации бухгалтерского учёта в Санкт-Петербурге']
+
 section.first-screen
   .container.first-screen__container
     .swiper-container
       .swiper-wrapper.slider
-        .slider-item.swiper-slide
-          h1.first-screen__title Бухгалтерские услуги в Санкт-Петербурге
-          a.first-screen__link Связь с нами
-        .slider-item.swiper-slide
-          h1.first-screen__title Аудиторские услуги в Санкт-Петербурге
-          a.first-screen__link Связь с нами
-        .slider-item.swiper-slide
-          h1.first-screen__title Услуги расчета налогов в Санкт-Петербурге
-          a.first-screen__link Связь с нами
-        .slider-item.swiper-slide
-          h1.first-screen__title Консультации бухгалтерского учёта в Санкт-Петербурге
-          a.first-screen__link Связь с нами
+        each item in firstScreenItems
+          .slider-item.swiper-slide
+            h1.first-screen__title= item
+            button.first-screen__btn Связь с нами
     .slider-pagination
     .slider-buttons
       button.slider-button-left
         svg
-          use(xlink:href="./../img/svg/sprite.svg#arrow-left")
+          use(xlink:href="./img/svg/sprite.svg#arrow-left")
       button.slider-button-right
         svg
-          use(xlink:href="./../img/svg/sprite.svg#arrow-right")
+          use(xlink:href="./img/svg/sprite.svg#arrow-right")
 

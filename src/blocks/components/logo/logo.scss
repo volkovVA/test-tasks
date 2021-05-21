@@ -1,3 +1,4 @@
+/* stylelint-disable */
 .logo {
     @include media-tablet {
         margin-bottom: 2rem;
@@ -19,6 +20,6 @@
     @include media-mobile {
         padding-top: 0;
     }
-    font-family: Merriweather, Arial, sans-serif;
+    font-family: Merriweather;
     padding-top: 12px;
 }

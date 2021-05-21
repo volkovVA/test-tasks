@@ -1,9 +1,9 @@
 -
   const galleryItems = [
-    {src:'./../img/image_1/image_1.jpg', srcset:'./img/image_1.jpg/image_1.jpg@2x.jpg 1.25x, ./img/image_1.jpg/image_1.jpg@3x.jpg 2.25x', alt:'фото'},
-    {src:'./../img/image_4/image_4.jpg', srcset:'./img/image_4/image_4@2x.jpg 1.25x, ./img/image_4/image_4@3x.jpg 2.25x', alt:'фото'},
-    {src:'./../img/image_2/image_2.jpg', srcset:'./img/image_2/image_2@2x.jpg 1.25x, ./img/image_2/image_2@3x.jpg 2.25x', alt:'фото'},
-    {src:'./../img/image_3/image_3.jpg', srcset:'./img/image_3/image_3@2x.jpg 1.25x, ./img/image_3/image_3@3x.jpg 2.25x', alt:'фото'}
+    {src:'./img/image_1/image_1.jpg', srcset:'./img/image_1.jpg/image_1.jpg@2x.jpg 1.25x, ./img/image_1.jpg/image_1.jpg@3x.jpg 2.25x', alt:'фото'},
+    {src:'./img/image_4/image_4.jpg', srcset:'./img/image_4/image_4@2x.jpg 1.25x, ./img/image_4/image_4@3x.jpg 2.25x', alt:'фото'},
+    {src:'./img/image_2/image_2.jpg', srcset:'./img/image_2/image_2@2x.jpg 1.25x, ./img/image_2/image_2@3x.jpg 2.25x', alt:'фото'},
+    {src:'./img/image_3/image_3.jpg', srcset:'./img/image_3/image_3@2x.jpg 1.25x, ./img/image_3/image_3@3x.jpg 2.25x', alt:'фото'}
   ]
 
 section.gallery
@@ -12,4 +12,4 @@ section.gallery
     ul.gallery__box
       each item in galleryItems
         li.gallery__item
-          img.lazy(data-src= item.src, data-srcset= item.srcset, alt= item.alt)
+          img.b-lazy(data-src= item.src, data-srcset= item.srcset, alt= item.alt)

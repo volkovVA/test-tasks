@@ -3,7 +3,7 @@
 }
 
 .heading {
-  font-family: Merriweather, Arial, sans-serif;
+  font-family: Merriweather;
   @include font-source(4.8rem, 900, $neutral-secondary);
   @include media-mobile {
     font-size: 3rem;
