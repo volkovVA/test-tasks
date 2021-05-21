@@ -30,6 +30,8 @@
         "@babel/register": "^7.4.0",
         "babel-eslint": "~10.0.2",
         "babel-loader": "^8.0.5",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-es2017": "^6.24.1",
         "bem-tools-core": "bem-tools/bem-tools-core",
         "bem-tools-create": "bem-tools/bem-tools-create",
         "browser-sync": "^2.23.6",

@@ -1,18 +1,20 @@
 const path = require("path");
 const webpack = require("webpack");
+import "regenerator-runtime/runtime.js";
+
 
 module.exports = {
-    plugins: [ 
-        new webpack.ProvidePlugin({ 
-            "jQuery": "jquery", 
-            "window.jQuery": "jquery", 
-            "jquery": "jquery", 
-            "window.jquery": "jquery", 
-            "$": "jquery", 
-            "window.$": "jquery" 
-        }) 
+    plugins: [
+        new webpack.ProvidePlugin({
+            "jQuery": "jquery",
+            "window.jQuery": "jquery",
+            "jquery": "jquery",
+            "window.jquery": "jquery",
+            "$": "jquery",
+            "window.$": "jquery"
+        })
     ],
-    
+
     entry: {
         main: "./src/js/index.js",
     },
