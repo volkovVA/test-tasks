@@ -1,0 +1,10 @@
+.header {
+  padding: rem(30) 0;
+}
+
+.header__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3vw;
+}

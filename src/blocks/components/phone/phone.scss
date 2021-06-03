@@ -1,0 +1,12 @@
+.phone__number {
+    @include font-source(rem(22), 900, rem(22));
+    &:before {
+        content: url("./../img/phone.png");
+        margin-right: 0.5vw;
+    }
+}
+
+.phone__messenger {
+    display: flex;
+    justify-content: space-evenly;
+}

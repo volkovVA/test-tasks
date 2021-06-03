@@ -1,0 +1,18 @@
+.map {
+    display: flex;
+    align-items: center;
+}
+
+.map__icon {
+    margin-right: 1vw;
+}
+
+.map__address {
+    @include font-source(rem(16), 400, rem(21));
+    display: flex;
+    flex-direction: column;
+}
+
+.map__city {
+    font-weight: 900;
+}

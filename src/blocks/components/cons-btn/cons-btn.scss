@@ -1,0 +1,7 @@
+.cons-btn {
+    @include font-source(rem(16), 700);
+    padding: rem(10) rem(20);
+    background-color: $second-color;
+    color: $default-color;
+    border-radius: rem(5);
+}

@@ -1,0 +1,14 @@
+.logo {
+    display: flex;
+}
+
+.logo__img {
+    min-width: rem(183);
+    min-height: rem(74);
+    margin-right: 1vw;
+}
+
+.logo__text {
+    @include font-source(rem(18), 400, rem(22));
+    width: 20vw;
+}
