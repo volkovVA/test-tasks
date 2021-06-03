@@ -1,0 +1,13 @@
+-
+  const sertItems = [
+    {src: './../img/cert/cert-1.jpg'},
+    {src: '../../../img/cert/cert-2.jpg'},
+    {src: '../../../img/cert/cert-3.jpg'}
+  ]
+
+.certificate
+  p.certificate__text Лицензии и сертификаты в наличии
+  .certificate__list
+    each item in sertItems
+      a.certificate__link(href='#')
+        img.certificate__img(src= item.src)

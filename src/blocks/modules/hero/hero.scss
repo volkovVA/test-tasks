@@ -1,0 +1,90 @@
+.hero__title {
+    @include font-source(rem(60), 400, rem(68));
+    width: 50vw;
+    margin-bottom: 7vw;
+}
+
+.hero__list {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+    width: 48vw;
+    margin-bottom: 5vw;
+}
+
+.hero__item {
+    @include font-source(rem(20), 400);
+    position: relative;
+    margin-right: 1vw;
+    &::before {
+        @include pseudo;
+        top: 0;
+        left: 0;
+        width: 1.5rem;
+        height: 4px;
+        transform: translate(-100%, -100%) rotate(-45deg);
+        background-color: $decor-color;
+    }
+    &:first-child {
+        display: flex;
+        font-size: rem(72);
+        font-weight: 900;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.hero__text {
+    @include font-source(rem(20), 400);
+    margin-left: 1vw;
+}
+
+.hero__box {
+    display: flex;
+    justify-content: space-between;
+    width: 48vw;
+}
+
+.hero__desc {
+    @include font-source(rem(18), 400, rem(28));
+    width: 28vw;
+    margin-bottom: 3vw;
+    & b {
+        display: inline-block;
+        background-color: $default-color;
+        border-radius: 3px;
+    }
+}
+
+.hero__calc-box {
+    margin-right: 1vw;
+}
+
+.hero__calc {
+    @include font-source(rem(17), 700, rem(24));
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    padding: rem(30) rem(40);
+    text-transform: uppercase;
+    background-color: $btn-color;
+    color: $default-color;
+    border-radius: 5px;
+    &::before {
+        content: url("./../img/hero/calc.png");
+        margin-right: 1vw;
+    }
+    & span {
+        display: inline-block;
+        max-width: rem(280);
+    }
+}
+
+.hero__image {
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    bottom: 0;
+}

@@ -5,7 +5,10 @@ block variables
 	- const title = "Unvent - Монтаж дымоходов в Киеве и Киевской области"
 
 block content
-	include ../blocks/modules/header/header.pug
+	.wrapper
+		.container.wrapper__container
+			include ../blocks/modules/header/header.pug
+			include ../blocks/modules/hero/hero.pug
 
 block scripts
 	script(src="js/main.js")

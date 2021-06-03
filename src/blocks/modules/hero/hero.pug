@@ -1,0 +1,24 @@
+-
+  const heroItems = [
+    {boldText: ' лет устанавливаем дымоходы ', text: 'для частных лиц и организаций'},
+    {boldText: 'Бесплатный выезд инженера ', text: 'в пределах 30 км. от Киева'},
+    {boldText: 'Монтаж под ключ от 1 дня ,', text: 'в наличии все разрешительные документы'}
+  ]
+
+section.hero
+  h1.hero__title #[b Монтаж дымоходов из нержавеющей стали] для частных домов и предприятий
+  ul.hero__list
+    each item,index in heroItems
+      if index === 0
+        li.hero__item
+          span 15
+          span.hero__text #[b= item.boldText] #[= item.text]
+      else
+        li.hero__item
+          span #[b= item.boldText] #[= item.text]
+  .hero__box
+    .hero__calc-box
+      p.hero__desc Рассчитайте стоимость монтажа вашего дымохода за 1 минуту и #[b получите скидку 15%]
+      a.hero__calc(href='#') #[span рассчитать стоимость монтажа и получить скидку]
+    include ../../components/certificate/certificate.pug
+  img.hero__image(src='./../img/hero/man.png' alt='монтажник')
