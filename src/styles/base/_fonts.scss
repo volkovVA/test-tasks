@@ -1,0 +1,167 @@
+@font-face {
+  font-family: 'UniNeue';
+  src: url('../../fonts/eot/UniNeueHeavy.eot');
+  src: local('UniNeueHeavy'), local('Uni Neue Heavy'), local('Uni-Neue-Heavy')
+      url('../../fonts/woff2/UniNeueHeavy.woff2') format('woff2'),
+      url('../../fonts/woff/UniNeueHeavy.woff') format('woff'),
+      url('../../fonts/ttf/UniNeueHeavy.ttf') format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'UniNeue';
+  src: url('../../fonts/eot/UniNeueHeavy-Italic.eot');
+  src: local('UniNeueHeavy-Italic'), local('Uni Neue Heavy Italic'), local('Uni-Neue-Heavy-Italic')
+      url('../../fonts/woff2/UniNeueHeavy-Italic.woff2') format('woff2'),
+      url('../../fonts/woff/UniNeueHeavy-Italic.woff') format('woff'),
+      url('../../fonts/ttf/UniNeueHeavy-Italic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'UniNeue';
+  src: url('../../fonts/eot/UniNeueBold.eot');
+  src: local('UniNeueBold'), local('Uni Neue Bold'), local('Uni-Neue-Bold')
+      url('../../fonts/woff2/UniNeueBold.woff2') format('woff2'),
+      url('../../fonts/woff/UniNeueBold.woff') format('woff'),
+      url('../../fonts/ttf/UniNeueBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'UniNeue';
+  src: url('../../fonts/eot/UniNeueBold-Italic.eot');
+  src: local('UniNeueBold-Italic'), local('Uni Neue Bold Italic'), local('Uni-Neue-Bold-Italic')
+      url('../../fonts/woff2/UniNeueBold-Italic.woff2') format('woff2'),
+      url('../../fonts/woff/UniNeueBold-Italic.woff') format('woff'),
+      url('../../fonts/ttf/UniNeueBold-Italic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'UniNeue Book';
+  src: url('../../fonts/eot/UniNeueBook.eot');
+  src: local('UniNeueBook'), local('Uni Neue Book'), local('Uni-Neue-Book')
+      url('../../fonts/woff2/UniNeueBook.woff2') format('woff2'),
+      url('../../fonts/woff/UniNeueBook.woff') format('woff'),
+      url('../../fonts/ttf/UniNeueBook.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'UniNeue Book';
+  src: url('../../fonts/eot/UniNeueBook-Italic.eot');
+  src: local('UniNeueBook-Italic'), local('Uni Neue Book Italic'), local('Uni-Neue-Book-Italic')
+      url('../../fonts/woff2/UniNeueBook-Italic.woff2') format('woff2'),
+      url('../../fonts/woff/UniNeueBook-Italic.woff') format('woff'),
+      url('../../fonts/ttf/UniNeueBook-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'UniNeue Black';
+  src: url('../../fonts/eot/UniNeueBlack.eot');
+  src: local('UniNeueBlack'), local('Uni Neue Black'), local('Uni-Neue-Black')
+      url('../../fonts/woff2/UniNeueBlack.woff2') format('woff2'),
+      url('../../fonts/woff/UniNeueBlack.woff') format('woff'),
+      url('../../fonts/ttf/UniNeueBlack.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'UniNeue Black';
+  src: url('../../fonts/eot/UniNeueBlack-Italic.eot');
+  src: local('UniNeueBlack-Italic'), local('Uni Neue Black Italic'), local('Uni-Neue-Black-Italic')
+      url('../../fonts/woff2/UniNeueBlack-Italic.woff2') format('woff2'),
+      url('../../fonts/woff/UniNeueBlack-Italic.woff') format('woff'),
+      url('../../fonts/ttf/UniNeueBlack-Italic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'UniNeue';
+  src: url('../../fonts/eot/UniNeueRegular.eot');
+  src: local('UniNeueRegular'), local('Uni Neue Regular'), local('Uni-Neue-Regular')
+      url('../../fonts/woff2/UniNeueRegular.woff2') format('woff2'),
+      url('../../fonts/woff/UniNeueRegular.woff') format('woff'),
+      url('../../fonts/ttf/UniNeueRegular.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'UniNeue';
+  src: url('../../fonts/eot/UniNeueRegular-Italic.eot');
+  src: local('UniNeueRegular-Italic'), local('Uni Neue Regular Italic'), local('Uni-Neue-Regular-Italic')
+      url('../../fonts/woff2/UniNeueRegular-Italic.woff2') format('woff2'),
+      url('../../fonts/woff/UniNeueRegular-Italic.woff') format('woff'),
+      url('../../fonts/ttf/UniNeueRegular-Italic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'UniNeue';
+  src: url('../../fonts/eot/UniNeueLight.eot');
+  src: local('UniNeueLight'), local('Uni Neue Light'), local('Uni-Neue-Light')
+      url('../../fonts/woff2/UniNeueLight.woff2') format('woff2'),
+      url('../../fonts/woff/UniNeueLight.woff') format('woff'),
+      url('../../fonts/ttf/UniNeueLight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'UniNeue';
+  src: url('../../fonts/eot/UniNeueLight-Italic.eot');
+  src: local('UniNeueLight-Italic'), local('Uni Neue Light Italic'), local('Uni-Neue-Light-Italic')
+      url('../../fonts/woff2/UniNeueLight-Italic.woff2') format('woff2'),
+      url('../../fonts/woff/UniNeueLight-Italic.woff') format('woff'),
+      url('../../fonts/ttf/UniNeueLight-Italic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'UniNeue';
+  src: url('../../fonts/eot/UniNeueThin.eot');
+  src: local('UniNeueThin'), local('Uni Neue Thin'), local('Uni-Neue-Thin')
+      url('../../fonts/woff2/UniNeueThin.woff2') format('woff2'),
+      url('../../fonts/woff/UniNeueThin.woff') format('woff'),
+      url('../../fonts/ttf/UniNeueThin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'UniNeue';
+  src: url('../../fonts/eot/UniNeueThin-Italic.eot');
+  src: local('UniNeueThin-Italic'), local('Uni Neue Thin Italic'), local('Uni-Neue-Thin-Italic')
+      url('../../fonts/woff2/UniNeueThin-Italic.woff2') format('woff2'),
+      url('../../fonts/woff/UniNeueThin-Italic.woff') format('woff'),
+      url('../../fonts/ttf/UniNeueThin-Italic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
