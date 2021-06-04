@@ -1,0 +1,23 @@
+.lang__text {
+    @include font-source(0.9rem, 400);
+}
+
+.lang__links {
+    @include font-source(1.1rem, 700);
+    text-align: center;
+}
+
+.lang__link {
+    margin-right: 0.5rem;
+    transition: color 0.3s;
+    &:last-child {
+        margin-right: 0;
+    }
+    &:hover {
+        color: $decor-color;
+    }
+}
+
+.current-url {
+    color: $decor-color;
+}
