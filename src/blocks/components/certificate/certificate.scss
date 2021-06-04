@@ -14,6 +14,9 @@
         font-size: 3.5rem;
         margin-bottom: 6rem;
     }
+    @include media-mobile {
+        font-size: 4.5rem;
+    }
     letter-spacing: -1px;
     margin-bottom: 0.7rem;
 }
@@ -31,6 +34,9 @@
         width: 20rem;
         margin-right: 3rem;
         border-width: 0.5rem;
+    }
+    @include media-tablet {
+        width: 30rem;
     }
     display: block;
     width: 4.3vw;

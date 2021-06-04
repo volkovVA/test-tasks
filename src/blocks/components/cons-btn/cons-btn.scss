@@ -3,6 +3,10 @@
     @include media-tablet {
         font-size: 1.6rem;
     }
+    @include media-mobile {
+        font-size: 3.2rem;
+        padding: 3rem 4rem;
+    }
     padding: 1.3rem 1.6rem;
     background-color: $second-color;
     color: $default-color;

@@ -16,6 +16,9 @@
   @include media-custom(992px) {
     margin-bottom: 2rem;
   }
+  @include media-mobile {
+    flex-wrap: wrap;
+}
 }
 
 .header__map {

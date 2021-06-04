@@ -12,9 +12,14 @@
         margin-bottom: 3.7rem;
     }
     @include media-tablet {
-        @include font-source(7rem, 100, 8rem);
+        @include font-source(7rem, 100, 10rem);
         width: 75vw;
         margin-bottom: 10rem;
+    }
+    @include media-mobile {
+        @include font-source(9rem, 100, 12rem);
+        width: 100%;
+        margin-bottom: 14rem;
     }
     width: 44vw;
     margin-bottom: 3.7vw;
@@ -33,6 +38,9 @@
         width: 100%;
         margin-bottom: 10rem;
     }
+    @include media-mobile {
+        flex-direction: column;
+    }
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -46,6 +54,14 @@
     @include font-source(1.1rem, 400, 1.2);
     @include media-tablet {
         font-size: 2.2rem;
+    }
+    @include media-mobile {
+        @include font-source(4.2rem, 400, 1.4);
+        margin-bottom: 7rem;
+        margin-left: 2rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
     position: relative;
     margin-left: 0.8rem;
@@ -71,12 +87,15 @@
             width: 38rem;
             margin-right: 0;
         }
+        @include media-mobile {
+            width: 100%;
+        }
         display: flex;
         align-items: flex-start;
         width: 18vw;
         margin-right: 1.5rem;
         &::before {
-            left: 14px;
+            left: 1rem;
         }
     }
     &:nth-child(2) {
@@ -87,6 +106,9 @@
             width: 25rem;
             margin-right: 0;
         }
+        @include media-mobile {
+            width: 100%;
+        }
         width: 12vw;
         margin-right: 2.2rem;
     }
@@ -96,6 +118,9 @@
         }
         @include media-tablet {
             width: 25rem;
+        }
+        @include media-mobile {
+            width: 100%;
         }
         width: 12vw;
         margin-right: 0;
@@ -116,6 +141,10 @@
     @include media-tablet {
         font-size: 2.2rem;
         margin-left: 1.5rem;
+    }
+    @include media-mobile {
+        @include font-source(4.2rem, 400, 1.4);
+        margin-left: 3rem;
     }
     margin-left: 0.9rem;
 }
@@ -150,6 +179,9 @@
         width: 80vw;
         margin-bottom: 5rem;
     }
+    @include media-mobile {
+        @include font-source(4rem, 400, 6rem);
+    }
     width: 25vw;
     margin-bottom: 1.3vw;
     padding-left: 1.3rem;
@@ -166,6 +198,9 @@
 
 .hero__calc {
     @include font-source(0.9rem, 700, 1.4rem);
+    @include media-mobile {
+        padding: 3.4rem 5rem;
+    }
     display: inline-flex;
     flex-wrap: nowrap;
     align-items: center;
@@ -177,15 +212,17 @@
     border-radius: 5px;
     & span {
         @include media-custom(992px) {
-            width: 17rem;
-        }
-        @include media-tablet {
-            width: 50rem;
-            padding-left: 7rem;
+            max-width: 17rem;
         }
         @include media-tablet {
             @include font-source(2rem, 700, 3.6rem);
-            max-width: 50vw;
+            max-width: 40rem;
+            padding-left: 7rem;
+        }
+        @include media-mobile {
+            @include font-source(3rem, 700, 4.6rem);
+            max-width: 60rem;
+            padding-left: 10rem;
         }
         display: inline-block;
         position: relative;
@@ -199,6 +236,11 @@
                 width: 5rem;
                 height: 5rem;
                 background-size: 5rem 5rem;
+            }
+            @include media-mobile {
+                width: 7rem;
+                height: 7rem;
+                background-size: 7rem 7rem;
             }
             top: 0.2rem;
             left: -1.7rem;
