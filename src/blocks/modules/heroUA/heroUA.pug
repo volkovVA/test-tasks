@@ -1,0 +1,24 @@
+-
+  const heroItems = [
+    {boldText: ' років встановлюємо димоходи ', text: 'для приватних осіб та організацій'},
+    {boldText: 'Безкоштовний виїзд інженера ', text: 'в межах 30 км. від Києва'},
+    {boldText: 'Монтаж під ключ від 1 дня ,', text: 'в наявності всі дозвільні документи'}
+  ]
+
+section.hero
+  h1.hero__title #[span Монтаж димоходів з нержавіючої сталі] для приватних будинків і підприємств
+  ul.hero__list
+    each item,index in heroItems
+      if index === 0
+        li.hero__item
+          span.hero__number 15
+          span.hero__text #[b= item.boldText] #[= item.text]
+      else
+        li.hero__item
+          span #[b= item.boldText] #[= item.text]
+  .hero__box
+    .hero__calc-box
+      p.hero__desc Розрахуйте вартість монтажу вашого димоходу за 1 хвилину і #[b отримайте знижку 15%]
+      a.hero__calc.btn-blick(href='#') #[span розрахувати вартість монтажу і отримати знижку]
+    include ../../components/certificateUA/certificateUA.pug
+  img.hero__image(src='./../img/hero/man.png' alt='монтажник')

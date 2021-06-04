@@ -1,15 +1,13 @@
-extends layouts/default
-include helpers/mixins
+extends ../layouts/default
 
 block variables
-	- const title = "Unvent - Монтаж дымоходов в Киеве и Киевской области"
+	- const title = "Unvent - Монтаж дымоходов в Киеве и Киевской области";
 
 block content
 	.wrapper
 		.container.wrapper__container
-			include ../blocks/modules/header/header.pug
-			include ../blocks/modules/hero/hero.pug
-	a.test(href='./ua.index.html') Test
+			include ../../blocks/modules/headerUA/headerUA.pug
+			include ../../blocks/modules/heroUA/heroUA.pug
 
 block scripts
 	script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js")
