@@ -1,10 +1,15 @@
 .header {
-  padding: rem(30) 0;
+  padding: 1.5vw 0;
 }
 
 .header__row {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 3vw;
+  margin-bottom: 2vw;
 }
+
+.header__map {
+  margin-right: 1.3vw;
+}
+

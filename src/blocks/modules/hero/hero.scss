@@ -1,90 +1,122 @@
+.hero {
+    padding-top: 2.5vw;
+}
+
 .hero__title {
-    @include font-source(rem(60), 400, rem(68));
-    width: 50vw;
-    margin-bottom: 7vw;
+    @include font-source(3.2rem, 100, 3.5rem);
+    width: 44vw;
+    margin-bottom: 3.7vw;
+    letter-spacing: -1px;
+    & span {
+        font-weight: 700;
+    }
 }
 
 .hero__list {
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
     position: relative;
     z-index: 10;
-    width: 48vw;
-    margin-bottom: 5vw;
+    width: 46vw;
+    margin-bottom: 2.9vw;
 }
 
 .hero__item {
-    @include font-source(rem(20), 400);
+    @include font-source(1.1rem, 400, 1.2);
     position: relative;
-    margin-right: 1vw;
+    margin-left: rem(10);
     &::before {
         @include pseudo;
-        top: 0;
-        left: 0;
-        width: 1.5rem;
-        height: 4px;
+        top: 0.3rem;
+        left: -0.4rem;
+        width: 1.3rem;
+        height: 0.3rem;
         transform: translate(-100%, -100%) rotate(-45deg);
         background-color: $decor-color;
     }
     &:first-child {
         display: flex;
-        font-size: rem(72);
-        font-weight: 900;
+        align-items: flex-start;
+        max-width: 18vw;
+        margin-right: 1.5rem;
+        &::before {
+            left: 14px;
+        }
+    }
+    &:nth-child(2) {
+        width: 12vw;
+        margin-right: 2.2rem;
     }
     &:last-child {
+        width: 12vw;
         margin-right: 0;
     }
 }
 
+.hero__number {
+    @include font-source(3.4rem, 900, 0.9);
+    letter-spacing: -5px;
+    padding-bottom: 0.9rem;
+}
+
 .hero__text {
-    @include font-source(rem(20), 400);
-    margin-left: 1vw;
+    @include font-source(1.1rem, 400);
+    margin-left: 0.9rem;
 }
 
 .hero__box {
     display: flex;
     justify-content: space-between;
-    width: 48vw;
+    width: 43vw;
 }
 
 .hero__desc {
-    @include font-source(rem(18), 400, rem(28));
-    width: 28vw;
-    margin-bottom: 3vw;
+    @include font-source(1rem, 400, 1.5rem);
+    width: 25vw;
+    margin-bottom: 1.3vw;
+    padding-left: 1.3rem;
     & b {
         display: inline-block;
         background-color: $default-color;
+        padding: 0 rem(7);
         border-radius: 3px;
     }
 }
 
-.hero__calc-box {
-    margin-right: 1vw;
-}
-
 .hero__calc {
-    @include font-source(rem(17), 700, rem(24));
+    @include font-source(0.9rem, 700, 1.4rem);
     display: inline-flex;
+    flex-wrap: nowrap;
     align-items: center;
     position: relative;
-    padding: rem(30) rem(40);
+    padding: 1.4rem 3rem;
     text-transform: uppercase;
     background-color: $btn-color;
     color: $default-color;
     border-radius: 5px;
-    &::before {
-        content: url("./../img/hero/calc.png");
-        margin-right: 1vw;
-    }
     & span {
         display: inline-block;
-        max-width: rem(280);
+        position: relative;
+        max-width: 17rem;
+        padding-left: 1.5rem;
+        &::before {
+            @include pseudo;
+            top: 0.2rem;
+            left: -1.7rem;
+            width: 2.3rem;
+            height: 2.3rem;
+            background: url("./../img/hero/calc.png") no-repeat center;
+            background-size: 2.3rem 2.3rem;
+            padding-top: 0.4rem;
+            margin-right: 0.5rem;
+        }
     }
 }
 
 .hero__image {
     position: absolute;
-    z-index: 0;
-    right: 0;
+    right: -3.5rem;
     bottom: 0;
+    width: 31vw;
 }

@@ -4,7 +4,11 @@
     justify-content: space-between;
 }
 
+.menu__item {
+    padding: 0.3rem;
+}
+
 .menu__link {
-    @include font-source(rem(16), 700);
+    @include font-source(0.8rem, 700);
     text-transform: uppercase;
 }

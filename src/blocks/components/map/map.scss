@@ -4,11 +4,13 @@
 }
 
 .map__icon {
-    margin-right: 1vw;
+    width: 4vw;
+    height: auto;
+    margin-right: 1rem;
 }
 
 .map__address {
-    @include font-source(rem(16), 400, rem(21));
+    @include font-source(0.9rem, 400, 1.3rem);
     display: flex;
     flex-direction: column;
 }

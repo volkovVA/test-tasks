@@ -1,5 +1,5 @@
 .wrapper {
-  border-radius: 0 0 rem(100) rem(100);
+  border-radius: 0 0 2rem 2rem;
   background: url('../../img/bg/bg.jpg') no-repeat center;
   background-size: cover;
   @mixin bg-2x {
@@ -12,6 +12,5 @@
 
 .wrapper__container {
   position: relative;
-  height: 100%;
-  padding-bottom: 4vw;
+  padding-bottom: 5.7vw;
 }

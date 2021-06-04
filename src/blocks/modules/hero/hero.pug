@@ -6,12 +6,12 @@
   ]
 
 section.hero
-  h1.hero__title #[b Монтаж дымоходов из нержавеющей стали] для частных домов и предприятий
+  h1.hero__title #[span Монтаж дымоходов из нержавеющей стали] для частных домов и предприятий
   ul.hero__list
     each item,index in heroItems
       if index === 0
         li.hero__item
-          span 15
+          span.hero__number 15
           span.hero__text #[b= item.boldText] #[= item.text]
       else
         li.hero__item
