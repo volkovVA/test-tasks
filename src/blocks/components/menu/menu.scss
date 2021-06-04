@@ -1,14 +1,35 @@
 .menu {
+    @include media-tablet {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $default-color;
+    }
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .menu__item {
+    @include media-tablet {
+        margin-bottom: 2rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
     padding: 0.3rem;
 }
 
 .menu__link {
     @include font-source(0.8rem, 700);
+    @include media-tablet {
+        font-size: 3rem;
+    }
     text-transform: uppercase;
 }

@@ -2,6 +2,7 @@
     @include font-source(0.8rem, 700);
     @include media-tablet {
         font-size: 1.6rem;
+        padding: 2.3rem 2.6rem;
     }
     @include media-mobile {
         font-size: 3.2rem;

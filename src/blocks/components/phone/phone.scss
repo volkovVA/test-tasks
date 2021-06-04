@@ -8,6 +8,7 @@
     @include font-source(1.2rem, 900);
     @include media-tablet {
         font-size: 1.6rem;
+        margin-bottom: 1rem;
     }
     @include media-mobile {
         font-size: 3.2rem;
@@ -30,6 +31,9 @@
 }
 
 .phone__messenger {
+    @include media-tablet {
+        padding: 0 1rem;
+    }
     @include media-mobile {
         padding: 0;
     }

@@ -4,6 +4,9 @@
     padding: 1.5rem;
   }
   @include media-tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 2.5rem;
   }
 }
@@ -16,9 +19,12 @@
   @include media-custom(992px) {
     margin-bottom: 2rem;
   }
+  @include media-tablet {
+    width: 85%;
+  }
   @include media-mobile {
     flex-wrap: wrap;
-}
+  }
 }
 
 .header__map {
@@ -28,6 +34,57 @@
   }
   @include media-tablet {
     display: none;
+  }
 }
+
+.header__nav {
+  & span {
+    display: none;
+    @include media-tablet {
+      position: relative;
+      display: block;
+      width: 5rem;
+      height: 4px;
+      background-color: $main-color;
+      &::before {
+        @include pseudo;
+        width: 5rem;
+        height: 4px;
+        left: 0;
+        top: 10px;
+        background-color: $main-color;
+      }
+      &::after {
+        @include pseudo;
+        width: 5rem;
+        height: 4px;
+        left: 0;
+        bottom: 10px;
+        background-color: $main-color;
+      }
+      &.is-active {
+        position: relative;
+        display: block;
+        width: 5rem;
+        height: 4px;
+        background-color: $main-color;
+        cursor: pointer;
+        z-index: 110;
+        transform: rotate(-45deg);
+        &::before {
+          @include pseudo;
+          width: 5rem;
+          height: 4px;
+          left: 0;
+          top: 0;
+          background-color: $main-color;
+          transform: rotate(90deg);
+        }
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
 }
 
