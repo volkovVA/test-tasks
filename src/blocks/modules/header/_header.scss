@@ -24,6 +24,7 @@
   }
   @include media-mobile {
     flex-wrap: wrap;
+    width: 100%;
   }
 }
 
@@ -37,54 +38,76 @@
   }
 }
 
-.header__nav {
-  & span {
-    display: none;
-    @include media-tablet {
+.header__logo {
+  @include media-mobile {
+    order: 1;
+  }
+}
+
+.header__icon {
+  display: none;
+  @include media-tablet {
+    position: relative;
+    display: block;
+    width: 5rem;
+    height: 4px;
+    background-color: $main-color;
+    &::before {
+      @include pseudo;
+      width: 5rem;
+      height: 4px;
+      left: 0;
+      top: 10px;
+      background-color: $main-color;
+    }
+    &::after {
+      @include pseudo;
+      width: 5rem;
+      height: 4px;
+      left: 0;
+      bottom: 10px;
+      background-color: $main-color;
+    }
+    &.is-active {
       position: relative;
       display: block;
       width: 5rem;
       height: 4px;
       background-color: $main-color;
+      cursor: pointer;
+      z-index: 110;
+      transform: rotate(-45deg);
+      @include media-mobile {
+        top: -18rem;
+        width: 8rem;
+      }
       &::before {
         @include pseudo;
         width: 5rem;
         height: 4px;
         left: 0;
-        top: 10px;
+        top: 0;
         background-color: $main-color;
+        transform: rotate(90deg);
+        @include media-mobile {
+          width: 8rem;
+        }
       }
       &::after {
-        @include pseudo;
-        width: 5rem;
-        height: 4px;
-        left: 0;
-        bottom: 10px;
-        background-color: $main-color;
-      }
-      &.is-active {
-        position: relative;
-        display: block;
-        width: 5rem;
-        height: 4px;
-        background-color: $main-color;
-        cursor: pointer;
-        z-index: 110;
-        transform: rotate(-45deg);
-        &::before {
-          @include pseudo;
-          width: 5rem;
-          height: 4px;
-          left: 0;
-          top: 0;
-          background-color: $main-color;
-          transform: rotate(90deg);
-        }
-        &::after {
-          display: none;
-        }
+        display: none;
       }
     }
   }
+  @include media-mobile {
+    position: absolute;
+    top: 10rem;
+    right: 2rem;
+    width: 8rem;
+    &:before {
+      width: 8rem;
+    }
+    &:after {
+      width: 8rem;
+    }
+  }
 }
-

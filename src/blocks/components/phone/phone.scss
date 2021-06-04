@@ -1,5 +1,6 @@
 .phone {
     @include media-mobile {
+        order: 2;
         padding: 7rem 0;
     }
 }
