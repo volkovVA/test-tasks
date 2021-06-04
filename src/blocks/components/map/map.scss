@@ -1,6 +1,11 @@
 .map {
     display: flex;
     align-items: center;
+    cursor: pointer;
+    transition: color 0.3s;
+    &:hover {
+        color: $decor-color;
+    }
 }
 
 .map__icon {

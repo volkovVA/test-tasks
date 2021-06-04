@@ -31,5 +31,9 @@
     @include media-tablet {
         font-size: 3rem;
     }
+    transition: color 0.3s;
     text-transform: uppercase;
+    &:hover {
+        color: $hover-color;
+    }
 }

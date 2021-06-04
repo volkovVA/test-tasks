@@ -19,6 +19,7 @@
     position: relative;
     white-space: nowrap;
     margin-bottom: 0.2rem;
+    transition: color 0.3s;
     &:before {
         @include pseudo;
         left: -1.7rem;
@@ -27,6 +28,9 @@
         background: url("./../img/phone.png") no-repeat center;
         background-size: 1.2rem 1.2rem;
         margin-right: 7px;
+    }
+    &:hover {
+        color: $hover-color;
     }
 }
 
@@ -55,4 +59,8 @@
     }
     width: 2.6vw;
     height: auto;
+    transition: transform 0.3s;
+    &:hover {
+        transform: scale(1.1);
+    }
 }
