@@ -1,4 +1,7 @@
 .certificate {
+    @include media-tablet {
+        align-self: center;
+    }
     align-self: flex-end;
     position: relative;
     z-index: 10;
@@ -7,6 +10,10 @@
 
 .certificate__text {
     @include font-source(0.9rem, 700);
+    @include media-tablet {
+        font-size: 3.5rem;
+        margin-bottom: 6rem;
+    }
     letter-spacing: -1px;
     margin-bottom: 0.7rem;
 }
@@ -17,6 +24,14 @@
 }
 
 .certificate__link {
+    @include media-custom(992px) {
+        width: 4.3rem;
+    }
+    @include media-tablet {
+        width: 20rem;
+        margin-right: 3rem;
+        border-width: 0.5rem;
+    }
     display: block;
     width: 4.3vw;
     border: 0.2rem solid $main-color;

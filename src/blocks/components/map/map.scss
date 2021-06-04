@@ -4,6 +4,9 @@
 }
 
 .map__icon {
+    @include media-custom(992px) {
+        width: 4rem;
+    }
     width: 4vw;
     height: auto;
     margin-right: 1rem;

@@ -1,5 +1,8 @@
 .cons-btn {
     @include font-source(0.8rem, 700);
+    @include media-tablet {
+        font-size: 1.6rem;
+    }
     padding: 1.3rem 1.6rem;
     background-color: $second-color;
     color: $default-color;

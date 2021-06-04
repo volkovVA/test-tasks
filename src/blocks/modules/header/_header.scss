@@ -1,5 +1,11 @@
 .header {
   padding: 1.5vw 0;
+  @include media-custom(992px) {
+    padding: 1.5rem;
+  }
+  @include media-tablet {
+    padding: 2.5rem;
+  }
 }
 
 .header__row {
@@ -7,9 +13,18 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 2vw;
+  @include media-custom(992px) {
+    margin-bottom: 2rem;
+  }
 }
 
 .header__map {
   margin-right: 1.3vw;
+  @include media-custom(992px) {
+    margin-right: 1.3rem;
+  }
+  @include media-tablet {
+    display: none;
+}
 }
 

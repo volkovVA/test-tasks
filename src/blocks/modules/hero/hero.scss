@@ -1,9 +1,21 @@
 .hero {
+    @include media-custom(992px) {
+        padding-top: 2.5rem;
+    }
     padding-top: 2.5vw;
 }
 
 .hero__title {
     @include font-source(3.2rem, 100, 3.5rem);
+    @include media-custom(992px) {
+        width: 44rem;
+        margin-bottom: 3.7rem;
+    }
+    @include media-tablet {
+        @include font-source(7rem, 100, 8rem);
+        width: 75vw;
+        margin-bottom: 10rem;
+    }
     width: 44vw;
     margin-bottom: 3.7vw;
     letter-spacing: -1px;
@@ -13,6 +25,14 @@
 }
 
 .hero__list {
+    @include media-custom(992px) {
+        width: 46rem;
+        margin-bottom: 2.9rem;
+    }
+    @include media-tablet {
+        width: 100%;
+        margin-bottom: 10rem;
+    }
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -24,10 +44,18 @@
 
 .hero__item {
     @include font-source(1.1rem, 400, 1.2);
+    @include media-tablet {
+        font-size: 2.2rem;
+    }
     position: relative;
-    margin-left: rem(10);
+    margin-left: 0.8rem;
     &::before {
         @include pseudo;
+        @include media-tablet {
+            left: 0.5rem;
+            width: 3rem;
+            height: 0.7rem;
+        }
         top: 0.3rem;
         left: -0.4rem;
         width: 1.3rem;
@@ -36,19 +64,39 @@
         background-color: $decor-color;
     }
     &:first-child {
+        @include media-custom(992px) {
+            width: 18rem;
+        }
+        @include media-tablet {
+            width: 38rem;
+            margin-right: 0;
+        }
         display: flex;
         align-items: flex-start;
-        max-width: 18vw;
+        width: 18vw;
         margin-right: 1.5rem;
         &::before {
             left: 14px;
         }
     }
     &:nth-child(2) {
+        @include media-custom(992px) {
+            width: 12rem;
+        }
+        @include media-tablet {
+            width: 25rem;
+            margin-right: 0;
+        }
         width: 12vw;
         margin-right: 2.2rem;
     }
     &:last-child {
+        @include media-custom(992px) {
+            width: 12rem;
+        }
+        @include media-tablet {
+            width: 25rem;
+        }
         width: 12vw;
         margin-right: 0;
     }
@@ -56,30 +104,62 @@
 
 .hero__number {
     @include font-source(3.4rem, 900, 0.9);
+    @include media-tablet {
+        font-size: 7rem;
+    }
     letter-spacing: -5px;
     padding-bottom: 0.9rem;
 }
 
 .hero__text {
     @include font-source(1.1rem, 400);
+    @include media-tablet {
+        font-size: 2.2rem;
+        margin-left: 1.5rem;
+    }
     margin-left: 0.9rem;
 }
 
 .hero__box {
+    @include media-custom(992px) {
+        width: 43rem;
+    }
+    @include media-tablet {
+        flex-direction: column;
+        width: 100%;
+    }
     display: flex;
     justify-content: space-between;
     width: 43vw;
 }
 
+.hero__calc-box {
+    @include media-tablet {
+        margin-bottom: 6rem;
+    }
+}
+
 .hero__desc {
     @include font-source(1rem, 400, 1.5rem);
+    @include media-custom(992px) {
+        width: 25rem;
+        margin-bottom: 1.3rem;
+    }
+    @include media-tablet {
+        @include font-source(2rem, 400, 5rem);
+        width: 80vw;
+        margin-bottom: 5rem;
+    }
     width: 25vw;
     margin-bottom: 1.3vw;
     padding-left: 1.3rem;
     & b {
+        @include media-tablet {
+            padding: 0 1.5rem;
+        }
         display: inline-block;
         background-color: $default-color;
-        padding: 0 rem(7);
+        padding: 0 1rem;
         border-radius: 3px;
     }
 }
@@ -96,12 +176,30 @@
     color: $default-color;
     border-radius: 5px;
     & span {
+        @include media-custom(992px) {
+            width: 17rem;
+        }
+        @include media-tablet {
+            width: 50rem;
+            padding-left: 7rem;
+        }
+        @include media-tablet {
+            @include font-source(2rem, 700, 3.6rem);
+            max-width: 50vw;
+        }
         display: inline-block;
         position: relative;
-        max-width: 17rem;
+        max-width: 17vw;
         padding-left: 1.5rem;
         &::before {
             @include pseudo;
+            @include media-tablet {
+                top: 1rem;
+                left: 0;
+                width: 5rem;
+                height: 5rem;
+                background-size: 5rem 5rem;
+            }
             top: 0.2rem;
             left: -1.7rem;
             width: 2.3rem;
@@ -115,6 +213,13 @@
 }
 
 .hero__image {
+    @include media-custom(992px) {
+        width: 31rem;
+    }
+    @include media-tablet {
+        right: -20rem;
+        width: 60rem;
+    }
     position: absolute;
     right: -3.5rem;
     bottom: 0;

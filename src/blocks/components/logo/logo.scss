@@ -4,6 +4,12 @@
 }
 
 .logo__img {
+    @include media-custom(992px) {
+        width: 10rem;
+    }
+    @include media-tablet {
+        width: 17rem;
+    }
     flex-shrink: 0;
     width: 10vw;
     height: auto;
@@ -12,5 +18,11 @@
 
 .logo__text {
     @include font-source(0.9rem, 400, 1.2rem);
+    @include media-custom(992px) {
+        width: 17rem;
+    }
+    @include media-custom(992px) {
+        display: none;
+    }
     width: 17vw;
 }

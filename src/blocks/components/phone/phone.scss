@@ -1,5 +1,8 @@
 .phone__number {
     @include font-source(1.2rem, 900);
+    @include media-tablet {
+        font-size: 1.6rem;
+    }
     display: flex;
     align-items: center;
     position: relative;
@@ -24,6 +27,12 @@
 }
 
 .phone__item {
+    @include media-custom(992px) {
+        width: 2.6rem;
+    }
+    @include media-tablet {
+        width: 3.6rem;
+    }
     width: 2.6vw;
     height: auto;
 }
