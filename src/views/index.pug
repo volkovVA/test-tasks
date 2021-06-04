@@ -11,5 +11,13 @@ block content
 			include ../blocks/modules/hero/hero.pug
 
 block scripts
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js")
+	script(src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js")
 	script(src="https://unpkg.com/swiper/swiper-bundle.min.js")
 	script(src="js/main.js")
+	script(src="js/vendor.js")
+	script.
+		$('.certificate__link').fancybox({
+			loop: true,
+			animationEffect: "zoom-in-out",
+		});

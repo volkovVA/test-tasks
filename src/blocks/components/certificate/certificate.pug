@@ -2,7 +2,12 @@
   const sertItems = [
     {src: './../img/cert/cert-1.jpg'},
     {src: './../img/cert/cert-2.jpg'},
-    {src: './../img/cert/cert-3.jpg'}
+    {src: './../img/cert/cert-3.jpg'},
+    {src: './../img/cert/cert-1.jpg'},
+    {src: './../img/cert/cert-2.jpg'},
+    {src: './../img/cert/cert-3.jpg'},
+    {src: './../img/cert/cert-1.jpg'},
+    {src: './../img/cert/cert-2.jpg'}
   ]
 
 .certificate
@@ -10,7 +15,7 @@
   .swiper-container
     .certificate__list.swiper-wrapper
       each item in sertItems
-        a.certificate__link.swiper-slide(href='#')
+        a.certificate__link.swiper-slide(data-fancybox="images" href= item.src)
           img.certificate__img(src= item.src)
   .swiper-button-next
   .swiper-button-prev
