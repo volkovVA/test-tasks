@@ -1,15 +1,21 @@
 .hero {
     @include media-custom(992px) {
-        padding-top: 2.5rem;
+        padding-top: 2.3rem;
     }
-    padding-top: 2.5vw;
+    @include media-tablet {
+        padding-top: 9.5rem;
+    }
+    @include media-mobile {
+        padding-top: 0;
+    }
+    padding-top: 2.3vw;
 }
 
 .hero__title {
     @include font-source(3.2rem, 100, 3.5rem);
     @include media-custom(992px) {
         width: 44rem;
-        margin-bottom: 3.7rem;
+        margin-bottom: 3.8rem;
     }
     @include media-tablet {
         @include font-source(7rem, 100, 10rem);
@@ -22,7 +28,7 @@
         margin-bottom: 14rem;
     }
     width: 44vw;
-    margin-bottom: 3.7vw;
+    margin-bottom: 3.8vw;
     letter-spacing: -1px;
     & span {
         font-weight: 700;
@@ -31,8 +37,8 @@
 
 .hero__list {
     @include media-custom(992px) {
-        width: 46rem;
-        margin-bottom: 2.9rem;
+        width: 47rem;
+        margin-bottom: 2.8rem;
     }
     @include media-tablet {
         width: 100%;
@@ -46,8 +52,8 @@
     justify-content: space-between;
     position: relative;
     z-index: 10;
-    width: 46vw;
-    margin-bottom: 2.9vw;
+    width: 47vw;
+    margin-bottom: 2.8vw;
 }
 
 .hero__item {
@@ -68,7 +74,7 @@
     &::before {
         @include pseudo;
         @include media-tablet {
-            left: 0.5rem;
+            left: -0.7rem;
             width: 3rem;
             height: 0.7rem;
         }
@@ -81,7 +87,7 @@
     }
     &:first-child {
         @include media-custom(992px) {
-            width: 18rem;
+            width: 19rem;
         }
         @include media-tablet {
             width: 38rem;
@@ -89,13 +95,16 @@
         }
         @include media-mobile {
             width: 100%;
+            &::before {
+                left: 0;
+            }
         }
         display: flex;
         align-items: flex-start;
-        width: 18vw;
-        margin-right: 1.5rem;
+        width: 19vw;
+        margin-right: 0.5rem;
         &::before {
-            left: 1rem;
+            left: 0.7rem;
         }
     }
     &:nth-child(2) {
@@ -146,12 +155,12 @@
         @include font-source(4.2rem, 400, 1.4);
         margin-left: 3rem;
     }
-    margin-left: 0.9rem;
+    margin-left: 0.6rem;
 }
 
 .hero__box {
     @include media-custom(992px) {
-        width: 43rem;
+        width: 42.8rem;
     }
     @include media-tablet {
         flex-direction: column;
@@ -159,19 +168,20 @@
     }
     display: flex;
     justify-content: space-between;
-    width: 43vw;
+    width: 42.8vw;
 }
 
 .hero__calc-box {
     @include media-tablet {
         margin-bottom: 6rem;
     }
+    margin-right: 1.5rem;
 }
 
 .hero__desc {
     @include font-source(1rem, 400, 1.5rem);
     @include media-custom(992px) {
-        width: 25rem;
+        width: 26rem;
         margin-bottom: 1.3rem;
     }
     @include media-tablet {
@@ -184,7 +194,7 @@
     }
     width: 26vw;
     margin-bottom: 1.3vw;
-    padding-left: 1.3rem;
+    padding-left: 1.2rem;
     & b {
         @include media-tablet {
             padding: 0 1.5rem;
@@ -205,7 +215,7 @@
     flex-wrap: nowrap;
     align-items: center;
     position: relative;
-    padding: 1.4rem 3rem;
+    padding: 1.4rem 2.6rem;
     text-transform: uppercase;
     background-color: $btn-color;
     color: $default-color;

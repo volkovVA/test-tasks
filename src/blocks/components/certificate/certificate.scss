@@ -42,7 +42,7 @@
     width: 4.3vw !important;
     height: auto;
     border: 0.2rem solid $main-color;
-    margin-right: 0.4rem;
+    margin-right: 0.5rem;
     &:last-child {
         margin-right: 0;
     }
@@ -61,7 +61,7 @@
     @include media-mobile {
         width: 82vw;
     }
-    width: 15.3rem;
+    width: 15.5rem;
 }
 
 .swiper-button-next, .swiper-button-prev {
@@ -71,7 +71,7 @@
     @include media-mobile {
         top: 29rem;
     }
-    top: 4.5rem;
+    top: 5.1rem;
     color: $main-color;
     &:after {
         @include media-tablet {
