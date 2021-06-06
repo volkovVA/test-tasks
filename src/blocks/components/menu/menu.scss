@@ -29,6 +29,9 @@
             margin-bottom: 0;
         }
     }
+    @include media-mobile-horizontal {
+        margin-bottom: 0.8rem;
+    }
     padding: 0.5rem 0;
 }
 
@@ -39,6 +42,9 @@
     }
     @include media-tablet {
         font-size: 5rem;
+    }
+    @include media-mobile-horizontal {
+        font-size: 3rem;
     }
     transition: color 0.3s;
     text-transform: uppercase;
