@@ -1,23 +1,23 @@
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 html {
   box-sizing: border-box;
   height: 100%;
-  font-size: 1rem;
+  font-size: rem(16);
 }
 
 body {
   position: relative;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", Arial, sans-serif;
-  background-color: #ffffff;
-  color: #434343;
-  line-height: 1.42;
+  font-family: $mainFont;
+  background-color: $main-color;
+  color: $text-color;
+  line-height: $mainLineHeight;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -56,9 +56,9 @@ button {
   background-color: transparent;
   border: none;
   padding: 0;
-}
-button:active {
-  outline: none;
+  &:active {
+    outline: none;
+  }
 }
 
 .container {
@@ -66,5 +66,3 @@ button:active {
   width: 95%;
   margin: 0 auto;
 }
-
-/*# sourceMappingURL=style.css.map */
