@@ -7,6 +7,9 @@ import {
   removeInputError,
   removeTemplateError
 } from './js/views/form.js';
+import {
+  login
+} from './js/services/auth.service.js';
 
 const {
   form,
@@ -26,7 +29,7 @@ form.addEventListener('submit', e => {
 
 inputs.forEach(el => el.addEventListener('focus', () => removeInputError(el)));
 
-function onSubmit() {
+async function onSubmit() {
   const isValidForm = inputs.every(el => {
     const isValidInput = validate(el);
     if (!isValidInput) {
@@ -35,5 +38,14 @@ function onSubmit() {
     return isValidInput;
   });
 
-  console.log(isValidForm);
+  if (!isValidForm) return;
+
+  try {
+    await login(inputName.value, inputEmail.value, inputPassword.value);
+    form.reset();
+    // show success notify
+  } catch (err) {
+    // show error
+  }
+
 }
