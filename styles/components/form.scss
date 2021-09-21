@@ -83,9 +83,10 @@
 
 .btn {
   display: inline-block;
-  padding: rem(6) rem(16);
+  padding: rem(8) rem(16);
   @include font-source(rem(16), 400, $main-color);
   text-align: center;
+  white-space: nowrap;
   vertical-align: middle;
   user-select: none;
   background-color: $btn-color;

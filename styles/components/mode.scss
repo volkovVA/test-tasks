@@ -1,0 +1,77 @@
+.screen-mode {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+}
+
+.mode-btn {
+  display: inline-block;
+  padding: rem(8) rem(16);
+  margin: rem(4);
+  @include font-source(rem(16), 400, $main-color);
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  background-color: $btn-color;
+  border-color: $btn-color;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-dark {
+  background-color: $btn-dark-color;
+  border-color: $btn-dark-color;
+  &:hover {
+    text-decoration: none;
+    background-color: $dark-hover-bg-color;
+    border-color: $dark-hover-border-color;
+  }
+  &:active {
+    background-color: $dark-active-bg-color;
+    border-color: $dark-active-border-color;
+    &:focus {
+      box-shadow: 0 0 0 0.2rem rgba(52,58,64, 0.5);
+    }
+  }
+}
+
+.btn-light {
+  color: $text-color;
+  background-color: $btn-light-color;
+  border-color: $btn-light-color;
+  &:hover {
+    text-decoration: none;
+    background-color: $light-hover-bg-color;
+    border-color: $light-hover-border-color;
+  }
+  &:active {
+    background-color: $light-active-bg-color;
+    border-color: $light-active-border-color;
+    &:focus {
+      box-shadow: 0 0 0 0.2rem rgb(248,249,250, 0.5);
+    }
+  }
+}
+
+body.dark {
+  background-color: $dark-mode-body;
+}
+
+.login-greeting-screen.dark {
+  background: $dark-mode-screen;
+}
+
+.card.dark {
+  background-color: $dark-mode-screen;
+  color: $main-color;
+  border-color: $border-color;
+}
+
+body,
+.login-greeting-screen,
+.card {
+  transition: all 0.3s ease-in;
+}

@@ -165,11 +165,12 @@ button, input {
 
 .btn {
   display: inline-block;
-  padding: 0.375rem 1rem;
+  padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 400;
   color: #ffffff;
   text-align: center;
+  white-space: nowrap;
   vertical-align: middle;
   user-select: none;
   background-color: #007bff;
@@ -211,6 +212,86 @@ button, input {
   background-repeat: no-repeat;
   background-position: right calc(0.375em + 0.1875rem) center;
   background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+.screen-mode {
+  position: absolute;
+  top: 3%;
+  right: 3%;
+}
+
+.mode-btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0.25rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  background-color: #007bff;
+  border-color: #007bff;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-dark {
+  background-color: #343a40;
+  border-color: #343a40;
+}
+.btn-dark:hover {
+  text-decoration: none;
+  background-color: #23272b;
+  border-color: #1d2124;
+}
+.btn-dark:active {
+  background-color: #1d2124;
+  border-color: #171a1d;
+}
+.btn-dark:active:focus {
+  box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
+}
+
+.btn-light {
+  color: #434343;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+.btn-light:hover {
+  text-decoration: none;
+  background-color: #e2e6ea;
+  border-color: #dae0e5;
+}
+.btn-light:active {
+  background-color: #dae0e5;
+  border-color: #d3d9df;
+}
+.btn-light:active:focus {
+  box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
+}
+
+body.dark {
+  background-color: #1f1f1f;
+}
+
+.login-greeting-screen.dark {
+  background: #224392;
+}
+
+.card.dark {
+  background-color: #224392;
+  color: #ffffff;
+  border-color: #ced4da;
+}
+
+body,
+.login-greeting-screen,
+.card {
+  transition: all 0.3s ease-in;
 }
 
 .notify-container {

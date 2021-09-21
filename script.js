@@ -13,6 +13,9 @@ import {
 import {
   notify
 } from './js/views/notifications.js';
+import {
+  selectScreenMode
+} from './js/mode/screen-mode.js';
 
 const {
   form,
@@ -60,3 +63,5 @@ async function onSubmit() {
     });
   }
 }
+
+selectScreenMode();
