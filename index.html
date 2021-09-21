@@ -32,6 +32,61 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="wrapper">
+      <div class="login-form-wrap">
+        <article class="form-card">
+          <h1 class="card-title">Please Login</h1>
+          <form name="loginForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                class="form-control"
+                id="name"
+                type="text"
+                placeholder="Enter name"
+                aria-describedby="nameHelp"
+                data-required="name"
+                data-invalid-message="Please enter name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input
+                class="form-control"
+                id="email"
+                type="email"
+                placeholder="Enter email"
+                aria-describedby="emailHelp"
+                data-required="email"
+                data-invalid-message="Please provide valid email example@example.com"
+              />
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+                class="form-control"
+                id="password"
+                type="password"
+                placeholder="Password"
+                data-required="password"
+              />
+            </div>
+            <button class="btn" type="submit">Submit</button>
+          </form>
+        </article>
+      </div>
+      <div class="login-greeting-screen">
+        <div class="login-greeting-screen-text">
+          <h1 class="login-greeting-screen-title">Welcome to my login-app</h1>
+          <p class="login-greeting-screen-description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+            inventore non accusantium earum, illo dolores reprehenderit laborum
+            ratione quos doloribus repellat eligendi deleniti. Ipsum voluptate
+            ipsa exercitationem eaque totam.
+          </p>
+        </div>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
