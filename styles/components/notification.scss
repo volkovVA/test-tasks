@@ -1,0 +1,23 @@
+.notify-container {
+  position: absolute;
+  bottom: 18%;
+}
+
+.alert {
+  margin-bottom: rem(10);
+  padding: rem(10) rem(20);
+  text-align: center;
+  color: $default-color;
+  border: 1px solid transparent;
+  border-radius: rem(5);
+}
+
+.danger {
+  background-color: $danger-color;
+  border-color: $danger-border-color;
+}
+
+.success {
+  background-color: $success-color ;
+  border-color: $success-border-color;
+}

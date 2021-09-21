@@ -4,6 +4,7 @@
 }
 
 .login-form-wrap {
+  position: relative;
   @include flex(center, center, column);
   flex-basis: 50%;
 }

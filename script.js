@@ -10,6 +10,9 @@ import {
 import {
   login
 } from './js/services/auth.service.js';
+import {
+  notify
+} from './js/views/notifications.js';
 
 const {
   form,
@@ -43,9 +46,17 @@ async function onSubmit() {
   try {
     await login(inputName.value, inputEmail.value, inputPassword.value);
     form.reset();
-    // show success notify
+    notify({
+      msg: 'Login success',
+      className: 'success'
+    });
+    setTimeout(() => {
+      window.location.href = 'https://www.epam.com/';
+    }, 2000);
   } catch (err) {
-    // show error
+    notify({
+      msg: 'Login failed',
+      className: 'danger'
+    });
   }
-
 }
