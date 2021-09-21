@@ -1,0 +1,108 @@
+.wrapper {
+  @include flex;
+  height: 100vh;
+}
+
+.login-form-wrap {
+  @include flex(center, center, column);
+  flex-basis: 50%;
+}
+
+.login-greeting-screen {
+  @include flex(center, center, column);
+  flex-basis: 50%;
+  padding: rem(20);
+  background: $bg-color;
+}
+
+.login-greeting-screen-text {
+  max-width: rem(500);
+  color: $main-color;
+}
+
+.login-greeting-screen-title {
+  margin-bottom: rem(30);
+  font-size: 500;
+  text-transform: capitalize;
+}
+
+.login-greeting-screen-description {
+  margin-bottom: rem(10);
+}
+
+.form-card {
+  max-width: rem(500);
+  width: 100%;
+  margin-right: rem(30);
+  margin-left: auto;
+}
+
+.card {
+  position: relative;
+  @include flex(none, none, column);
+  padding: rem(20);
+  word-wrap: break-word;
+  background-color: $main-color;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0, 0.2);
+  border-radius: rem(5);
+}
+
+.card-title {
+  margin-bottom: rem(20);
+  @include font-source(rem(24), 500);
+}
+
+.form-group {
+  margin-bottom: rem(16);
+}
+
+.form-label {
+  display: inline-block;
+  margin-bottom: rem(8);
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: rem(8) rem(16);
+  @include font-source(rem(16), 400);
+  line-height: 1.6;
+  background-clip: padding-box;
+  border: 1px solid $border-color;
+  border-radius: rem(5);
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  &:focus {
+    background-color: $main-color;
+    border-color: $border-active-color;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255, 0.25);
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: rem(6) rem(16);
+  @include font-source(rem(16), 400, $main-color);
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: $btn-color;
+  border-color: $btn-color;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  &:hover {
+    text-decoration: none;
+    background-color: $btn-hover-color;
+    border-color: $btn-active-bg-color;
+  }
+  &:active {
+    background-color: $btn-active-bg-color;
+    border-color: $btn-active-border-color;
+    &:focus {
+      box-shadow: 0 0 0 0.2rem rgba(38,143,255, 0.5);
+    }
+  }
+}

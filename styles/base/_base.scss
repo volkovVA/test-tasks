@@ -61,6 +61,10 @@ button {
   }
 }
 
+button, input {
+  overflow: visible;
+}
+
 .container {
   max-width: 1200px;
   width: 95%;

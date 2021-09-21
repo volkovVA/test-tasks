@@ -61,10 +61,134 @@ button:active {
   outline: none;
 }
 
+button, input {
+  overflow: visible;
+}
+
 .container {
   max-width: 1200px;
   width: 95%;
   margin: 0 auto;
+}
+
+.wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+.login-form-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-basis: 50%;
+}
+
+.login-greeting-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-basis: 50%;
+  padding: 1.25rem;
+  background: #20c997;
+}
+
+.login-greeting-screen-text {
+  max-width: 31.25rem;
+  color: #ffffff;
+}
+
+.login-greeting-screen-title {
+  margin-bottom: 1.875rem;
+  font-size: 500;
+  text-transform: capitalize;
+}
+
+.login-greeting-screen-description {
+  margin-bottom: 0.625rem;
+}
+
+.form-card {
+  max-width: 31.25rem;
+  width: 100%;
+  margin-right: 1.875rem;
+  margin-left: auto;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  word-wrap: break-word;
+  background-color: #ffffff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3125rem;
+}
+
+.card-title {
+  margin-bottom: 1.25rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.3125rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-control:focus {
+  background-color: #ffffff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.375rem 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: #007bff;
+  border-color: #007bff;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.btn:hover {
+  text-decoration: none;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+.btn:active {
+  background-color: #0062cc;
+  border-color: #005cbf;
+}
+.btn:active:focus {
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
 }
 
 /*# sourceMappingURL=style.css.map */
