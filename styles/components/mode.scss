@@ -2,6 +2,10 @@
   position: absolute;
   top: 3%;
   right: 3%;
+  @include media-mobile {
+    top: 1%;
+    right: 1%;
+  }
 }
 
 .mode-btn {

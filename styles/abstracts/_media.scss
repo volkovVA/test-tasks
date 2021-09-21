@@ -1,22 +1,22 @@
 @import "./variables";
 
-@mixin media-tablet{
-
-  @media (max-width: $mediaWidthTablet) {
-      @content;
-  }
-}
-
-@mixin media-mobile {
+@mixin media-mobile{
 
   @media (max-width: $mediaWidthMobile) {
       @content;
   }
 }
 
+@mixin media-min-mobile {
+
+  @media (max-width: $mediaMinWidthMobile) {
+      @content;
+  }
+}
+
 @mixin media-mobile-horizontal {
 
-  @media (max-width: $mediaMaxWidthMobile) and (orientation:landscape){
+  @media (max-width: $mediaWidthTablet) and (orientation: landscape) {
       @content;
   }
 }
