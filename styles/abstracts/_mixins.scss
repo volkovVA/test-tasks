@@ -22,18 +22,22 @@
   }
 }
 
-// Flex centering
+// Button
 
-@mixin flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-// Pseudo
-
-@mixin pseudo($display: block, $pos: absolute, $content: ''){
-  content: $content;
-  display: $display;
-  position: $pos;
+@mixin btn($background-color: none, $border-color: none) {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  @if $background-color != none {
+    background-color: #{$background-color};
+  }
+  @if $border-color != none {
+    border-color: #{$border-color};
+  }
 }

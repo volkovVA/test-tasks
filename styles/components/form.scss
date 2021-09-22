@@ -110,27 +110,17 @@
 }
 
 .btn {
-  display: inline-block;
-  padding: rem(8) rem(16);
+  @include btn($btn-color, $btn-color);
   @include font-source(rem(16), 400, $main-color);
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  user-select: none;
-  background-color: $btn-color;
-  border-color: $btn-color;
-  cursor: pointer;
-  border: 1px solid transparent;
-  border-radius: 0.25rem;
-  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  padding: rem(8) rem(16);
   &:hover {
     text-decoration: none;
-    background-color: $btn-hover-color;
-    border-color: $btn-active-bg-color;
+    background-color: $btn-hover-bg-color;
+    border-color: $btn-hover-br-color;
   }
   &:active {
-    background-color: $btn-active-bg-color;
-    border-color: $btn-active-border-color;
+    background-color: $btn-hover-bg-color;
+    border-color: $btn-hover-br-color;
     &:focus {
       box-shadow: 0 0 0 0.2rem rgba(38,143,255, 0.5);
     }

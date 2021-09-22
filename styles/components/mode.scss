@@ -8,21 +8,11 @@
   }
 }
 
-.mode-btn {
-  display: inline-block;
+.btn-mode {
+  @include btn();
   padding: rem(8) rem(16);
   margin: rem(4);
   @include font-source(rem(16), 400, $main-color);
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  user-select: none;
-  background-color: $btn-color;
-  border-color: $btn-color;
-  cursor: pointer;
-  border: 1px solid transparent;
-  border-radius: 0.25rem;
-  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .btn-dark {
@@ -31,11 +21,11 @@
   &:hover {
     text-decoration: none;
     background-color: $dark-hover-bg-color;
-    border-color: $dark-hover-border-color;
+    border-color: $dark-hover-br-color;
   }
   &:active {
     background-color: $dark-active-bg-color;
-    border-color: $dark-active-border-color;
+    border-color: $dark-active-br-color;
     &:focus {
       box-shadow: 0 0 0 0.2rem rgba(52,58,64, 0.5);
     }
@@ -49,11 +39,11 @@
   &:hover {
     text-decoration: none;
     background-color: $light-hover-bg-color;
-    border-color: $light-hover-border-color;
+    border-color: $light-hover-br-color;
   }
   &:active {
     background-color: $light-active-bg-color;
-    border-color: $light-active-border-color;
+    border-color: $light-active-br-color;
     &:focus {
       box-shadow: 0 0 0 0.2rem rgb(248,249,250, 0.5);
     }

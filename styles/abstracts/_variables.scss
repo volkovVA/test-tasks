@@ -17,31 +17,28 @@ $bg-color                    : #20c997;
 $border-color                : #ced4da;
 $border-active-color         : #80bdff;
 $btn-color                   : #007bff;
-$btn-hover-color             : #0069d9;
-$btn-active-bg-color         : #0062cc;
-$btn-active-border-color     : #005cbf;
+$btn-hover-bg-color          : #0069d9;
+$btn-hover-br-color          : #005cbf;
 $invalid-color               : #dc3545;
 $danger-color                : #f8d7da;
 $danger-border-color         : #f5c6cb;
 $success-color               : #d4edda;
 $success-border-color        : #c3e6cb;
 $btn-dark-color              : #343a40;
-$dark-hover-border-color     : #1d2124;
+$dark-hover-br-color         : #1d2124;
 $dark-hover-bg-color         : #23272b;
-$dark-active-border-color    : #171a1d;
+$dark-active-br-color        : #171a1d;
 $dark-active-bg-color        : #1d2124;
 $btn-light-color             : #f8f9fa;
-$light-hover-border-color    : #dae0e5;
+$light-hover-br-color        : #dae0e5;
 $light-hover-bg-color        : #e2e6ea;
-$light-active-border-color   : #d3d9df;
+$light-active-br-color       : #d3d9df;
 $light-active-bg-color       : #dae0e5;
 $dark-mode-body              : #1f1f1f;
 $dark-mode-screen            : #224392;
-
-
 
 // Media
 
 $mediaMinWidthMobile         : 320px;
 $mediaWidthMobile            : 420px;
-$mediaWidthTablet            : 1000px;
+$mediaWidthTablet            : 1024px;

@@ -6,15 +6,19 @@ export function selectScreenMode() {
   const greetingScreen = document.querySelector('.login-greeting-screen');
   const card = document.querySelector('.card');
 
+  function addClass() {
+    [...arguments].forEach(el => el.classList.add('dark'));
+  }
+
+  function removeClass() {
+    [...arguments].forEach(el => el.classList.remove('dark'));
+  }
+
   btnDark.addEventListener('click', () => {
-    body.classList.add('dark');
-    greetingScreen.classList.add('dark');
-    card.classList.add('dark');
+    addClass(body, greetingScreen, card);
   });
 
   btnLight.addEventListener('click', () => {
-    body.classList.remove('dark');
-    greetingScreen.classList.remove('dark');
-    card.classList.remove('dark');
+    removeClass(body, greetingScreen, card);
   });
 }
