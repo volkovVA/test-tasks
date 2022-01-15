@@ -1,18 +1,20 @@
 # FUN-BOX
 
-Тестовое задание Level2 на позицию "HTML/CSS/JS разработчика". Компания "FUNBOX"
+Level 2 test task for the position of "HTML/CSS/JS developer". Company "FUNBOX"
 
 * Gulp
 * Pug
 * SCSS
 * IE11 Support
 
+## Live Demo: [Fun-Box](https://volkovva.github.io/test-tasks/fun-box/)
+
 ![fun-box](fun-box/screenshots/desktop.png "demo fun-box")
 ![fun-box](fun-box/screenshots/mobile.png "demo fun-box")
 ![fun-box](fun-box/screenshots/task.png "demo fun-box")
 
-## Установка проекта
+## Project Installation
 
-* скачайте необходимые зависимости: ```yarn```
-* чтобы начать работу, введите команду: ```gulp``` (режим разработки)
-* чтобы собрать проект, введите команду ```gulp prod --production``` (режим сборки)
+* download the necessary dependencies: ```yarn```
+* to get started, enter the command: ```gulp``` (development mode)
+* to build a project, enter the command: ```gulp prod --production``` (build mode)
