@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="login-form-wrap">
+        <div class="card-body">
+          <article class="form-card card">
+            <h1 class="card-title">Please Login</h1>
+            <form name="loginForm">
+              <div class="form-group">
+                <label class="form-label" for="name">Name</label>
+                <input
+                  class="form-control"
+                  id="name"
+                  type="text"
+                  placeholder="Enter name"
+                  data-required="name"
+                  data-invalid-message="Please enter name"
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">Email address</label>
+                <input
+                  class="form-control"
+                  id="email"
+                  type="email"
+                  placeholder="Enter email"
+                  data-required="email"
+                  data-invalid-message="Please provide valid email example@example.com"
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="password">Password</label>
+                <input
+                  class="form-control"
+                  id="password"
+                  type="password"
+                  placeholder="Password"
+                  data-required="password"
+                  data-invalid-message="Invalid password"
+                />
+              </div>
+              <button class="btn" type="submit">Submit</button>
+            </form>
+          </article>
+        </div>
+      </div>
+      <div class="login-greeting-screen">
+        <div class="screen-mode">
+          <button class="btn-mode btn-light">Light mode</button>
+          <button class="btn-mode btn-dark">Dark mode</button>
+        </div>
+        <div class="login-greeting-screen-text">
+          <h1 class="login-greeting-screen-title">welcome to my login app</h1>
+          <p class="login-greeting-screen-description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+            inventore non accusantium earum, illo dolores reprehenderit laborum
+            ratione quos doloribus repellat eligendi deleniti. Ipsum voluptate
+            ipsa exercitationem eaque totam.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>

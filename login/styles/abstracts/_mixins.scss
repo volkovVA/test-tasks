@@ -1,0 +1,43 @@
+// Font-Source
+
+@mixin font-source($size: false, $weight: false, $color: false, $lh: false, ) {
+  @if $size { font-size: $size; }
+  @if $weight { font-weight: $weight; }
+  @if $color { color: $color; }
+  @if $lh { line-height: $lh; }
+}
+
+// Flex
+
+@mixin flex($justify: none, $align: none, $direction: none) {
+  display: flex;
+  @if $align != none {
+    align-items: #{$align};
+  }
+  @if $justify != none {
+    justify-content: #{$justify};
+  }
+  @if $direction != none {
+    flex-direction: #{$direction};
+  }
+}
+
+// Button
+
+@mixin btn($background-color: none, $border-color: none) {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  @if $background-color != none {
+    background-color: #{$background-color};
+  }
+  @if $border-color != none {
+    border-color: #{$border-color};
+  }
+}
