@@ -1,8 +1,6 @@
 # BuhOne
 
-```
-Тестовое задание на позицию "HTML-верстальщик". Компания "Бизнес Рост"
-```
+Test task for the position of "HTML coder". Company "Бизнес Рост"
 
 #### FrontEnd
 * Pug
@@ -15,22 +13,24 @@
 * Git
 * Yarn
 
-#### Код native JavaScript
+#### Code native JavaScript
 
-* Фото в модальном окне
+* Photo in the modal window
 * Accordion
 * YandexMap
 
-#### Плагины
+#### Plugins
 
 * Swiper Slider native JS
+
+## Live Demo: [Buhone](https://volkovva.github.io/test-tasks/buhone/)
 
 ![buhone](buhone/screenshots/demo.png "buhone")
 ![buhone](buhone/screenshots/demo2.png "buhone")
 
-### Установка проекта
+## Project Installation
 
-* установить ```gulp``` глобально: ```yarn global add gulp-cli```
-* скачать необходимые зависимости: ```yarn```
-* чтобы начать работу, ввести команду: ```yarn run dev``` (режим разработки)
-* чтобы собрать проект, ввести команду ```yarn run build``` (режим сборки)
+* install ```gulp``` globally ```yarn global add gulp-cli```
+* download the necessary dependencies: ```yarn```
+* to get started, enter the command: ```yarn run dev``` (development mode)
+* to build a project, enter the command: ```yarn run build``` (build mode)
