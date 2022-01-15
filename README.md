@@ -25,9 +25,8 @@
 
 * Swiper Slider native JS
 
-## Демо [BUHONE](https://volkovva.github.io/buhone/)
-![buhone](screenshots/demo.png "buhone")
-![buhone](screenshots/demo2.png "buhone")
+![buhone](buhone/screenshots/demo.png "buhone")
+![buhone](buhone/screenshots/demo2.png "buhone")
 
 ### Установка проекта
 

@@ -1,6 +1,6 @@
 "use strict";
 
-import { paths } from "../gulpfile.babel";
+import { paths } from "../../gulpfile.babel";
 import gulp from "gulp";
 import gulpif from "gulp-if";
 import imageminWebp from "imagemin-webp";
