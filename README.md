@@ -24,9 +24,8 @@
 * Swiper Slider native JS
 * Fancybox jQuery
 
-## Демо [UNVENT](https://volkovva.github.io/unvent/)
-![unvent](screenshots/demo.png "unvent")
-![unvent](screenshots/demo2.png "unvent")
+![unvent](unvent/screenshots/demo.png "unvent")
+![unvent](unvent/screenshots/demo2.png "unvent")
 
 ### Установка проекта
 
