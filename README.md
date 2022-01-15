@@ -7,10 +7,9 @@
 * SCSS
 * IE11 Support
 
-## Демо [FUN-BOX](https://volkovva.github.io/fun-box/)
-![fun-box](screenshots/desktop.png "demo fun-box")
-![fun-box](screenshots/mobile.png "demo fun-box")
-![fun-box](screenshots/task.png "demo fun-box")
+![fun-box](fun-box/screenshots/desktop.png "demo fun-box")
+![fun-box](fun-box/screenshots/mobile.png "demo fun-box")
+![fun-box](fun-box/screenshots/task.png "demo fun-box")
 
 ## Установка проекта
 
