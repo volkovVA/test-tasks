@@ -1,8 +1,6 @@
 # unvent
 
-```
-Тестовое задание на позицию "HTML-верстальщик (Frontend-разработчик)" компания "Paradigma.Website"
-```
+Test task for the position of "HTML layout designer (Frontend developer)". Company "Paradigma.Website"
 
 #### FrontEnd
 * Pug
@@ -14,22 +12,24 @@
 * Git
 * Yarn
 
-#### Код native JavaScript
+#### Code native JavaScript
 
-* YandexMap в модальном окне
+* Yandex Map in the modal window
 * Burger Menu
 
-#### Плагины
+#### Plugins
 
 * Swiper Slider native JS
 * Fancybox jQuery
 
+## Live Demo: [Unvent](https://volkovva.github.io/test-tasks/unvent/)
+
 ![unvent](unvent/screenshots/demo.png "unvent")
 ![unvent](unvent/screenshots/demo2.png "unvent")
 
-### Установка проекта
+## Project Installation
 
-* установить ```gulp``` глобально: ```yarn global add gulp-cli```
-* скачать необходимые зависимости: ```yarn```
-* чтобы начать работу, ввести команду: ```yarn run dev``` (режим разработки)
-* чтобы собрать проект, ввести команду ```yarn run build``` (режим сборки)
+* install ```gulp``` globally: ```yarn global add gulp-cli```
+* download the necessary dependencies: ```yarn```
+* to get started, enter the command: ```yarn run dev``` (development mode)
+* to build a project, enter the command: ```yarn run build``` (build mode)
