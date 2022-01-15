@@ -1,5 +1,5 @@
 # login-project
 
-## [LIVE-DEMO](https://volkovva.github.io/login/)
+## Tesk Task. EPAM training: Front-End Development. Belarus, Gomel
 
-![login](screenshot/demo.png "demo login")
+![login](login/screenshot/demo.png "demo login")
