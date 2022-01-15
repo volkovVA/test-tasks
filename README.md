@@ -7,9 +7,9 @@
 ## Описание задания: [task description](https://github.com/Nevatrip/layout-test-task)
 
 ## 1. Верстка блока
-### Демо: [NEVATRIP](https://volkovva.github.io/nevatrip/)
-![nevatrip](screenshots/nevatrip.png "demo nevatrip")
-![nevatrip](screenshots/nevatrip-mobile.png "demo nevatrip")
+
+![nevatrip](nevatrip/screenshots/nevatrip.png "demo nevatrip")
+![nevatrip](nevatrip/screenshots/nevatrip-mobile.png "demo nevatrip")
 
 ### Установка проекта
 
